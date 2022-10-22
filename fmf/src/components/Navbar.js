@@ -39,12 +39,12 @@ const Navbar = () => {
               <button className='navMenuButton' onClick={toggleOpen}>
                 <KeyboardDoubleArrowRightIcon />
               </button>
-              {navData.map(item =>{
+              {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
                   {item.icon}
                   <span className='linkTextClosed'>{item.text}</span>
                 </NavLink>
-              })}
+              })} */}
             </div>
           </div>
         </div>
