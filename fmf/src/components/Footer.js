@@ -44,14 +44,14 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
+            {/* <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Actions</h6>
               <p>
                 <a href='#!' className='text-reset'>
                   Button1
                 </a>
               </p>
-            </div>
+            </div> */}
 
             {/* <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
@@ -81,7 +81,7 @@ export default function Footer() {
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2022 Copyright:<br></br>
         <a className='text-reset fw-bold' href='https://infosys.com/'>
-          Maniacal Earthwax Munchkins
+          FMF Team HackGT
         </a>
       </div>
     </MDBFooter>
