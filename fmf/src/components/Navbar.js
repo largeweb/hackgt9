@@ -3,7 +3,7 @@ import {useState, useEffect} from "react"
 import { navData } from "../lib/navData";
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import './App.css';
+import '../App.css';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
