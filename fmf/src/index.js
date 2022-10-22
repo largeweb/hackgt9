@@ -27,7 +27,7 @@ import PreferencePage from './pages/PreferencePage';
 import DirectionPage from './pages/DirectionPage';
 import ReviewPage from './pages/ReviewPage';
 
-import App from './App';
+// import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
