@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
       <a className="navbar-brand navbarLabel" href="/">
-        Infosys
+        Find My Food
       </a>
 
       {/* <button
