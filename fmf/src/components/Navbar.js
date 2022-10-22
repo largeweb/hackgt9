@@ -21,7 +21,7 @@ const Navbar = () => {
       </a>
       <div className={open?'navmenu':'navmenuClosed'}>
         <button className='navMenuButton' onClick={toggleOpen}>
-          {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowIcon}
+          {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowRightIcon}
         </button>
         {navData.map(item =>{
           return <NavLink key={item.id} className='navItem' to={item.link}>
