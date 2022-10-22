@@ -21,7 +21,7 @@ import useLocalStorage from "use-local-storage"
 
 function HomeDashboardPage() {
 
-  const [priceLevel, setPriceLevel] = useLocalStorage('pricelevel', '2');
+  const [pricelevel, setPriceLevel] = useLocalStorage('pricelevel', '2');
   const [distance, setDistance] = useLocalStorage('distance', '10');
 
  return (
