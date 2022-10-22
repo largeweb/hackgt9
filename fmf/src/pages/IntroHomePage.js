@@ -23,7 +23,6 @@ function IntroHomePage() {
 	  <Link to="/"><button className='menuButton'>Intro Home Page /</button></Link>
 	  <Link to="/login"><button className='menuButton'>Login Page /login</button></Link>
 	  <Link to="/dashboard"><button className='menuButton'>Home Dashboard /dashboard</button></Link>
-	  <Link to="/filter"><button className='menuButton'>Filter Page /filter</button></Link>
 	  <Link to="/preferences"><button className='menuButton'>Preference Page /preferences</button></Link>
 	  <Link to="/directions"><button className='menuButton'>Direction Page /directions</button></Link>
 	  <Link to="/review"><button className='menuButton'>Review Page /review</button></Link>

@@ -22,7 +22,6 @@ import reportWebVitals from './reportWebVitals';
 import IntroHomePage from './pages/IntroHomePage';
 import LoginPage from './pages/LoginPage';
 import HomeDashboardPage from './pages/HomeDashboardPage';
-import FilterPage from './pages/FilterPage';
 import PreferencePage from './pages/PreferencePage';
 import DirectionPage from './pages/DirectionPage';
 import ReviewPage from './pages/ReviewPage';
@@ -47,7 +46,7 @@ root.render(
         <Route path="/" element={<IntroHomePage/>} />
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/dashboard" element={<HomeDashboardPage/>} />
-        <Route path="/filter" element={<FilterPage/>} />
+        {/* <Route path="/filter" element={<FilterPage/>} /> */}
         <Route path="/preferences" element={<PreferencePage/>} />
         <Route path="/directions" element={<DirectionPage/>} />
         <Route path="/review" element={<ReviewPage/>} />

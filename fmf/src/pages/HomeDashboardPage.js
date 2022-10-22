@@ -10,10 +10,13 @@ import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 
 // this page has two buttons but also the pull out menu 3 bars
+// this page will also have the filter options
 // choose now button goes to directions page
 // customize button goes to preference page
 // pull out menu has profile, past history, and preferences, and all the other pages
 // profile will be for google after if we have time
+// fliter page using hooks, a submit button
+// submit will bring you to dashboard page
 
 function HomeDashboardPage() {
  return (
