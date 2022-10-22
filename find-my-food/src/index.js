@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SecondPage from './pages/SecondPage';
 import SuperCoolPage from './pages/SuperCoolPage';
 
-import fs from 'fs'
+// import fs from 'fs'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
