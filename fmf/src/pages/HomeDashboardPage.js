@@ -33,7 +33,7 @@ function HomeDashboardPage() {
     </div> */}
     <Link to="/preferences"><button className='randomChooseButton'>Choose Random</button></Link>
     <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
-      <div>Price</div>
+      <div style={{marginBottom:"10px"}}>Price</div>
       {pricelevel === "1"
         ? <div>
             <div className='selectedPriceLevel'>$</div>

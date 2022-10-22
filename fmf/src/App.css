@@ -347,7 +347,6 @@ navmain {
   border: 3px solid var(--border-color);
   padding: 10px;
   width: 20%;
-  margin-top: 10px;
   margin-left: 10%;
   display:inline;
 }
