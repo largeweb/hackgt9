@@ -37,36 +37,37 @@ function HomeDashboardPage() {
       {pricelevel === "1"
         ? <div>
             <div className='selectedPriceLevel'>$</div>
-            <div onClick={(e) => setPriceLevel('2')}>$$</div>
-            <div onClick={(e) => setPriceLevel('3')}>$$$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('2')}>$$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('3')}>$$$</div>
           </div>
         : <div />
       }
       {pricelevel === "2"
         ? <div>
-            <div onClick={(e) => setPriceLevel('1')}>$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('1')}>$</div>
             <div className='selectedPriceLevel'>$$</div>
-            <div onClick={(e) => setPriceLevel('3')}>$$$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('3')}>$$$</div>
           </div>
         : <div />
       }
       {pricelevel === "3"
         ? <div>
-            <div onClick={(e) => setPriceLevel('1')}>$</div>
-            <div onClick={(e) => setPriceLevel('2')}>$$</div>
-            <div className='selectedPriceLevel'>$$$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('1')}>$</div>
+            <div className='priceItem' onClick={(e) => setPriceLevel('2')}>$$</div>
+            <div className='selectedPriceLevel priceItem'>$$$</div>
           </div>
         : <div />
       }
     </div>
     <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
-      <div>Distance</div>
+      <div className='centeronly'>Within</div>
       <input
               type="text"
-              placeholder="Distance (miles)"
+              placeholder="Distance"
               value={distance}
               className='centeronly'
               onChange={(e) => setDistance(e.target.value)} />
+      <div className='centeronly'>Miles</div>
     </div>
     <Link to="/preferences"><button className='menuButton centeronly'>Continue</button></Link>
     <br></br>
