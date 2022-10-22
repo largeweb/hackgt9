@@ -1,2 +1,7 @@
-# life-pwa
-progressive web app i am using daily for my todos and whatnot
+# hackgt9
+
+# getting started
+npm i
+
+ssh root@45.79.208.137
+findmyfood
