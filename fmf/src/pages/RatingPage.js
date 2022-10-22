@@ -12,12 +12,15 @@ import child1 from "../images/child1.jpeg"
 // ratings page will just rating
 // add note * this will improve your results in the future
 
-function ReviewPage() {
+function RatingPage() {
  return (
   <div className='homediv'>
     <Navbar />
     <div className='menuContainer aboutdiv'>
-      This is the Review Page
+      This is the Rating Page
+    </div>
+    <div className='menuContainer aboutdiv'>
+      ***** Rating
     </div>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
@@ -25,4 +28,4 @@ function ReviewPage() {
  )
 }
 
-export default ReviewPage;
+export default RatingPage;

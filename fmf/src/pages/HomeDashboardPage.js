@@ -19,12 +19,52 @@ import child1 from "../images/child1.jpeg"
 // submit will bring you to dashboard page
 
 function HomeDashboardPage() {
+
+  const [priceLevel, setPriceLevel] = useLocalStorage('pricelevel', '2');
+  const [distance, setDistance] = useLocalStorage('distance', '10');
+
  return (
   <div className='homediv'>
     <Navbar />
+    <div>Menu 3 Bars</div>
     <div className='menuContainer aboutdiv'>
-      This is the Home Dashboard Page
+      Find my Food
     </div>
+    <Link to="/preferences"><button className='menuButton'>Choose Random</button></Link>
+    <div className='menuContainer aboutdiv'>
+      Price
+    </div>
+    {pricelevel === "1"
+      ? <div>
+          <div className='selectedPriceLevel'>$</div>
+          <div>$$</div>
+          <div>$$$</div>
+        </div>
+      : <div />
+    }
+    {pricelevel === "2"
+      ? <div>
+          <div>$</div>
+          <div className='selectedPriceLevel'>$$</div>
+          <div>$$$</div>
+        </div>
+      : <div />
+    }
+    {pricelevel === "3"
+      ? <div>
+          <div>$</div>
+          <div>$$</div>
+          <div className='selectedPriceLevel'>$$$</div>
+        </div>
+      : <div />
+    }
+    <input
+            type="text"
+            placeholder="Password"
+            value={distance}
+            className=''
+            onChange={(e) => setDistance(e.target.value)} />
+    <Link to="/preferences"><button className='menuButton'>Go to Preferences</button></Link>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>

@@ -235,3 +235,7 @@ img {
   border-radius: 10%;
   height: 100px;
 }
+
+.selectedPriceLevel {
+  background-color: rgb(255, 255, 0);
+}

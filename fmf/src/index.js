@@ -49,7 +49,7 @@ root.render(
         {/* <Route path="/filter" element={<FilterPage/>} /> */}
         <Route path="/preferences" element={<PreferencePage/>} />
         <Route path="/directions" element={<DirectionPage/>} />
-        <Route path="/review" element={<ReviewPage/>} />
+        <Route path="/rating" element={<RatingPage/>} />
         {/* <Route path="/" element={<Login/>} />
         <Route path="/app" element={<App/>} />
         <Route path="/appadmin" element={<AppAdmin/>} />

@@ -20,6 +20,11 @@ function DirectionPage() {
     <div className='menuContainer aboutdiv'>
       This is the Direction Page
     </div>
+    <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
+    <div className='menuContainer aboutdiv'>
+      Start Journey
+    </div>
+	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>

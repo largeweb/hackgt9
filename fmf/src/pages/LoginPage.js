@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 import useLocalStorage from "react-use-localstorage"
 
-// login page is just user pass fields and a button that brings to filter page
+// login page is just user pass fields and a button that brings to dashboard page
 
 function LoginPage() {
 
@@ -36,6 +36,7 @@ function LoginPage() {
             value={password}
             className=''
             onChange={(e) => setPassword(e.target.value)} />
+	  <Link to="/dashboard"><button className='menuButton'>Login</button></Link>
 
     <hr></hr>
     <hr></hr>
