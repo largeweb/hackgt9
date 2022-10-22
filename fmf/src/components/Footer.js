@@ -39,9 +39,9 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>
                 <i className='fas fa-gem me-3'></i>Find my Food
               </h6>
-              <p>
+              <div>
                 Don't know what to eat?<br></br>Find My Food is here to help you find the best food in your area.
-              </p>
+              </div>
             </div>
 
             <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
