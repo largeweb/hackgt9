@@ -59,10 +59,11 @@ function HomeDashboardPage() {
         : <div />
       }
     </div>
-    <div className='menuContainer aboutdiv'>
+    <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
+      <div>Distance</div>
       <input
               type="text"
-              placeholder="Password"
+              placeholder="Distance (miles)"
               value={distance}
               className='centeronly'
               onChange={(e) => setDistance(e.target.value)} />
