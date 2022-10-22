@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react"
-import { navData } from "../lib/navData";
+// import { navData } from "../lib/navData";
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import '../App.css';
@@ -25,12 +25,12 @@ const Navbar = () => {
               <button className='navMenuButton' onClick={toggleOpen}>
                 {<KeyboardDoubleArrowLeftIcon />}
               </button>
-              {navData.map(item =>{
+              {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
                   {item.icon}
                   <span className='linkText'>{item.text}</span>
                 </NavLink>
-              })}
+              })} */}
             </div>
           </div>
         : <div>
@@ -39,12 +39,12 @@ const Navbar = () => {
               <button className='navMenuButton' onClick={toggleOpen}>
                 {KeyboardDoubleArrowRightIcon}
               </button>
-              {navData.map(item =>{
+              {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
                   {item.icon}
                   <span className='linkTextClosed'>{item.text}</span>
                 </NavLink>
-              })}
+              })} */}
             </div>
           </div>
         </div>
