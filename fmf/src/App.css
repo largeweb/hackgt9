@@ -299,3 +299,9 @@ body {
 navmain {
   padding: 10px;
 }
+
+.centerobj {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}

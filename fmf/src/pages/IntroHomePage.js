@@ -23,7 +23,7 @@ function IntroHomePage() {
     </div>
 	  <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
 	  <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
-	  <Link to="/dashboard" style={{alignContent:"center"}}><button>Continue as Guest</button></Link>
+	  <Link to="/dashboard"><button className='menuButton centerobj'>Continue as Guest</button></Link>
 
     {/* <hr></hr>
     <hr></hr>
