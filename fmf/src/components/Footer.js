@@ -40,7 +40,7 @@ export default function Footer() {
                 <i className='fas fa-gem me-3'></i>Find my Food
               </h6>
               <p>
-                Don't know what to eat? Find My Food is here to help you find the best food in your area.
+                Don't know what to eat?<br></br>Find My Food is here to help you find the best food in your area.
               </p>
             </div>
 
