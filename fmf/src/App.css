@@ -69,13 +69,15 @@
 }
 
 .randomChooseButton {
-  width: 48%;
+  width: 30%;
   background: var(--button-color);
   color: var(--text-color);
   font-weight: bold;
   font-size: 15px;
   padding: 15px;
-  margin: 1% 5% 10% 0;
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   border-radius: 20%;
   border: 3px solid var(--border-color);
   text-align: center;

@@ -66,6 +66,7 @@ function HomeDashboardPage() {
             className='centeronly'
             onChange={(e) => setDistance(e.target.value)} />
     <Link to="/preferences"><button className='menuButton'>Continue</button></Link>
+    <br></br>
 	  <Link to="/"><button className='menuButton'>Log Out</button></Link>
     <Footer />
   </div>
