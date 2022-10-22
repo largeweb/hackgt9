@@ -32,7 +32,7 @@ function HomeDashboardPage() {
       Find my Food
     </div> */}
     <Link to="/preferences"><button className='randomChooseButton'>Choose Random</button></Link>
-    <div className='menuContainer aboutdiv'>
+    <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
       <div>Price</div>
       {pricelevel === "1"
         ? <div>
