@@ -1,8 +1,15 @@
 :root {
+  --app-header-color: #282c34;
   --border-color: #7b70b4;
   --button-color: #b4d4fd;
   --menu-color: #d4bdff;
   --text-color: #000;
+  --navmenu-btn-color: #B2BAC2;
+  --small-link-btn-color: gray;
+  --footer-background: rgb(220, 235, 255);
+  --app-link-color: #61dafb;
+  --home-div-bg-color: rgb(199, 216, 255);
+  --nav-menu-btn-color: rgb(10,25,41);
 }
 
 .App {
@@ -22,7 +29,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--app-header-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,7 +40,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--app-link-color);
 }
 
 @keyframes App-logo-spin {
@@ -112,13 +119,13 @@
 }
 
 .footertype {
-  background: rgb(220, 235, 255);
+  background: var(--footer-background);
   /* padding-top: 1px; */
   /* margin-top: 100px; */
 }
 
 .homediv {
-  background-color: rgb(199, 216, 255);
+  background-color: var(--home-div-bg-color);
 }
 
 .switchdiv {
@@ -248,7 +255,7 @@ img {
   width: 250px;
   transition: width 0.3s ease-in-out;
   height: 100vh;
-  background-color: rgb(10,25,41);
+  background-color: var(--navmenu-btn-color);
   padding-top: 28px;
 }
 
@@ -263,7 +270,7 @@ img {
   align-items: center;
   padding: 10px 20px;
   cursor: pointer;
-  color: #B2BAC2;
+  color: var(--navmenu-btn-color);
   text-decoration: none;
 }
 
@@ -284,7 +291,7 @@ img {
   align-self: center;
   align-self: flex-start;
   justify-self: flex-end;
-  color: #B2BAC2;
+  color: var(--navmenu-btn-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -300,13 +307,9 @@ navmain {
   padding: 10px;
 }
 
-.centeronly {
+.smallLinkButton {
+  color: var(--small-link-btn-color);
   align-content: center;
   width: 50%;
   margin-left: 25%;
-}
-
-.smallLinkButton {
-  color: gray;
-  background-color: blue;
 }
