@@ -18,6 +18,17 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 // import useLocalStorage from "./hooks/useLocalStorage"
 
+
+import IntroHomePage from './pages/IntroHomePage';
+import LoginPage from './pages/LoginPage';
+import HomeDashboardPage from './pages/HomeDashboardPage';
+import FilterPage from './pages/FilterPage';
+import PreferencePage from './pages/PreferencePage';
+import DirectionPage from './pages/DirectionPage';
+import ReviewPage from './pages/ReviewPage';
+
+import App from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // const [userid, setUserid] = useLocalStorage({id:''})
@@ -33,7 +44,14 @@ root.render(
           ? <Route path="/" element={<Login/>} />
         } */}
 
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<IntroHome/>} />
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/dashboard" element={<HomeDashboardPage/>} />
+        <Route path="/filter" element={<FilterPage/>} />
+        <Route path="/preferences" element={<PreferencePage/>} />
+        <Route path="/directions" element={<DirectionPage/>} />
+        <Route path="/review" element={<ReviewPage/>} />
+        {/* <Route path="/" element={<Login/>} />
         <Route path="/app" element={<App/>} />
         <Route path="/appadmin" element={<AppAdmin/>} />
         <Route path="/cubicle" element={<CubiclePage/>} />
@@ -44,7 +62,7 @@ root.render(
         <Route path="/socialmanager" element={<SocialHolidaysManagerPage />} />
         <Route path="/rdp" element={<RDPRequestPage />} />
         <Route path="/rdpmanager" element={<RDPManagerPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about" element={<AboutPage />} /> */}
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
