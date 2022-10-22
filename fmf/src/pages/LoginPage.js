@@ -21,26 +21,23 @@ function LoginPage() {
   <div className='homediv'>
     <Navbar />
     <div className='menuContainer aboutdiv'>
-      This is the Login Page
-    </div>
+      <div>Please Login</div>
 
-    <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            className='loginInput'
-            onChange={(e) => setUsername(e.target.value)} />
-    <input
-            type="text"
-            placeholder="Password"
-            value={password}
-            className='loginInput'
-            onChange={(e) => setPassword(e.target.value)} />
-	  <Link to="/dashboard"><button className='menuButton centeronly'>Login</button></Link>
+      <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              className='loginInput'
+              onChange={(e) => setUsername(e.target.value)} />
+      <input
+              type="text"
+              placeholder="Password"
+              value={password}
+              className='loginInput'
+              onChange={(e) => setPassword(e.target.value)} />
+      <Link to="/dashboard"><button className='menuButton centeronly'>Login</button></Link>
 
-    <div>
-      <p>{username}</p>
-    </div>
+      </div>
 
     <Footer />
   </div>
