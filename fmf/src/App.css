@@ -342,3 +342,8 @@ navmain {
   padding: 8px;
   font-size: 15px;
 }
+
+.priceItem {
+  width: 20%;
+  margin-left: 10%;
+}
