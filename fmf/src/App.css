@@ -365,3 +365,7 @@ navmain {
   font-weight: 700;
   color: var(--small-title-text);
 }
+
+.mainTitleMenu {
+  background-color: #6443ba;
+}
