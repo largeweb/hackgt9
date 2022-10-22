@@ -357,9 +357,11 @@ navmain {
 .bigTitleText {
   font-size: 40px;
   color: var(--big-title-text);
+  font-weight: 700;
 }
 
 .smallTitleText {
-  font-size: 10px;
+  font-size: 20px;
+  font-weight: 700;
   color: var(--small-title-text);
 }
