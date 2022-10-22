@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 
 // this page has continue with facebook/google OR continue as guest
-// continue as guest will link straight to filter page
+// continue as guest will link straight to dashboard page
 // continue with facebook/google will link to login page
 
 function IntroHomePage() {
@@ -20,6 +20,17 @@ function IntroHomePage() {
     <div className='menuContainer aboutdiv'>
       This is the Intro Home Page
     </div>
+	  <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
+	  <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
+	  <Link to="/dashboard"><button className='menuButton'>Continue as Guest</button></Link>
+
+    <hr></hr>
+    <hr></hr>
+    <hr></hr>
+    <p>Dev Stuff</p>
+    <hr></hr>
+    <hr></hr>
+    <hr></hr>
 	  <Link to="/"><button className='menuButton'>Intro Home Page /</button></Link>
 	  <Link to="/login"><button className='menuButton'>Login Page /login</button></Link>
 	  <Link to="/dashboard"><button className='menuButton'>Home Dashboard /dashboard</button></Link>
