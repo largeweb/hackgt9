@@ -344,6 +344,7 @@ navmain {
 }
 
 .priceItem {
+  border: 5px solid var(--border-color);
   width: 20%;
   margin-left: 10%;
   display:inline;
