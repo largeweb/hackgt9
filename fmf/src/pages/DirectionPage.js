@@ -21,7 +21,7 @@ For cubicle select, the administrator would have the ability to upload a labelle
 For the childcare and social events registration, there is no functionality. However, the idea for the social events is that a person can see who is registered for which event.<hr></hr>
 Desktop RDP was unimplemented, but mentioned in the slide show. It is meant to be an automated system which can request individuals who are near your desktop and in-office to power the computer on to enable remote desktop.
     </div>
-	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )
