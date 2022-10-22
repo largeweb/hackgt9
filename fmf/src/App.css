@@ -11,6 +11,8 @@
   --app-link-color: #61dafb;
   --home-div-bg-color: rgb(199, 216, 255);
   --nav-menu-btn-color: rgb(10,25,41);
+  --big-title-text: white;
+  --small-title-text: orange;
 }
 
 .App {
@@ -349,4 +351,15 @@ navmain {
   width: 20%;
   margin-left: 10%;
   display:inline;
+  font-size: 20px;
+}
+
+.bigTitleText {
+  font-size: 40px;
+  color: var(--big-title-text);
+}
+
+.smallTitleText {
+  font-size: 10px;
+  color: var(--small-title-text);
 }
