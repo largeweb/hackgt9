@@ -24,7 +24,7 @@ import LoginPage from './pages/LoginPage';
 import HomeDashboardPage from './pages/HomeDashboardPage';
 import PreferencePage from './pages/PreferencePage';
 import DirectionPage from './pages/DirectionPage';
-import ReviewPage from './pages/ReviewPage';
+import RatingPage from './pages/RatingPage';
 
 // import App from './App';
 
