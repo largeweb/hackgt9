@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
+import useLocalStorage from "use-local-storage"
 
 // directions page will have a google map with directions to the building
 // using the google api

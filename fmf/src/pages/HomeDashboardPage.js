@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
+import useLocalStorage from "use-local-storage"
 
 // this page has two buttons but also the pull out menu 3 bars
 // this page will also have the filter options

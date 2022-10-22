@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
+import useLocalStorage from "use-local-storage"
 
 // this page has continue with facebook/google OR continue as guest
 // continue as guest will link straight to dashboard page
@@ -31,7 +32,6 @@ function IntroHomePage() {
     <hr></hr>
     <hr></hr>
     <hr></hr>
-	  <Link to="/"><button className='menuButton'>Intro Home Page /</button></Link>
 	  <Link to="/login"><button className='menuButton'>Login Page /login</button></Link>
 	  <Link to="/dashboard"><button className='menuButton'>Home Dashboard /dashboard</button></Link>
 	  <Link to="/preferences"><button className='menuButton'>Preference Page /preferences</button></Link>
