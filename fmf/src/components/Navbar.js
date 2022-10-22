@@ -23,7 +23,7 @@ const Navbar = () => {
         ? <div>
             <div className='navmenu'>
               <button className='navMenuButton' onClick={toggleOpen}>
-                {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowRightIcon}
+                {<KeyboardDoubleArrowLeftIcon />}
               </button>
               {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
