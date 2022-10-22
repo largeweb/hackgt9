@@ -17,7 +17,6 @@ function App() {
   return (
     <div class="homediv">
       <Navbar />
-      <HomeMenuUser />
       {/* ⚠️ TRY TO ADMIN PROTECT THIS BUTTON ⚠️ */}
       {/* It makes sense to */}
 
