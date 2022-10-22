@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar"
-import HomeMenuAdmin from "./pages/HomeMenuAdmin"
-import HomeMenuUser from "./pages/HomeMenuUser"
 import Footer from "./components/Footer"
 import {useState, useEffect} from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
