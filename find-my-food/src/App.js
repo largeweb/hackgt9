@@ -19,8 +19,8 @@ function App() {
         >
           Learn React FUCKER 🥲
         </a>
-        <Link to={'/page2'}><button className='menubutton' >/page2 goes to second page</button></Link>
-        <Link to={'/cool-page'}><button className='menubutton' >/cool-page goes to super cool page</button></Link>
+        {/* <Link to={'/page2'}><button className='menubutton' >/page2 goes to second page</button></Link>
+        <Link to={'/'}><button className='menubutton' >/page2 goes to second page</button></Link> */}
       </header>
     </div>
   );
