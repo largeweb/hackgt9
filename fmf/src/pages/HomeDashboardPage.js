@@ -38,23 +38,23 @@ function HomeDashboardPage() {
     {pricelevel === "1"
       ? <div>
           <div className='selectedPriceLevel'>$</div>
-          <div>$$</div>
-          <div>$$$</div>
+          <div onClick={(e) => setPriceLevel('2')}>$$</div>
+          <div onClick={(e) => setPriceLevel('3')}>$$$</div>
         </div>
       : <div />
     }
     {pricelevel === "2"
       ? <div>
-          <div>$</div>
+          <div onClick={(e) => setPriceLevel('1')}>$</div>
           <div className='selectedPriceLevel'>$$</div>
-          <div>$$$</div>
+          <div onClick={(e) => setPriceLevel('3')}>$$$</div>
         </div>
       : <div />
     }
     {pricelevel === "3"
       ? <div>
-          <div>$</div>
-          <div>$$</div>
+          <div onClick={(e) => setPriceLevel('1')}>$</div>
+          <div onClick={(e) => setPriceLevel('2')}>$$</div>
           <div className='selectedPriceLevel'>$$$</div>
         </div>
       : <div />
