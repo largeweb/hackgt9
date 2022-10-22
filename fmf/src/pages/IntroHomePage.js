@@ -19,11 +19,11 @@ function IntroHomePage() {
   <div className='homediv'>
     <Navbar />
     <div className='menuContainer aboutdiv'>
-      This is the Intro Home Page
+      {/* This is the Intro Home Page */}
+      <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
+      <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
+      <Link to="/dashboard"><button className='menuButton centeronly'>Continue as Guest</button></Link>
     </div>
-	  <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
-	  <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
-	  <Link to="/dashboard"><button className='menuButton centeronly'>Continue as Guest</button></Link>
 
     {/* <hr></hr>
     <hr></hr>
