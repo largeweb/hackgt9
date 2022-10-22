@@ -19,17 +19,36 @@ const Navbar = () => {
       <a className="navbar-brand navbarLabel" href="/">
         Find My Food
       </a>
-      <div className={open?'navmenu':'navmenuClosed'}>
-        <button className='navMenuButton' onClick={toggleOpen}>
-          {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowRightIcon}
-        </button>
-        {navData.map(item =>{
-          return <NavLink key={item.id} className='navItem' to={item.link}>
-            {item.icon}
-            <span className={open?'linkText':'linkTextClosed'}>{item.text}</span>
-		       </NavLink>
-        })}
-      </div>
+      {open
+        ? <div>
+            <div className='navmenu'>
+              <button className='navMenuButton' onClick={toggleOpen}>
+                {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowRightIcon}
+              </button>
+              {navData.map(item =>{
+                return <NavLink key={item.id} className='navItem' to={item.link}>
+                  {item.icon}
+                  <span className='linkText'>{item.text}</span>
+                </NavLink>
+              })}
+            </div>
+          </div>
+        : <div>
+          <div>
+            <div className='navmenuClosed'>
+              <button className='navMenuButton' onClick={toggleOpen}>
+                {KeyboardDoubleArrowRightIcon}
+              </button>
+              {navData.map(item =>{
+                return <NavLink key={item.id} className='navItem' to={item.link}>
+                  {item.icon}
+                  <span className='linkTextClosed'>{item.text}</span>
+                </NavLink>
+              })}
+            </div>
+          </div>
+        </div>
+      }
 
       {/* <button
         className="navbar-toggler"
