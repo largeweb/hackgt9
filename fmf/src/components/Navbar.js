@@ -23,28 +23,28 @@ const Navbar = () => {
         ? <div>
             <div className='navmenu'>
               <button className='navMenuButton' onClick={toggleOpen}>
-                {<KeyboardDoubleArrowLeftIcon />}
+                <KeyboardDoubleArrowLeftIcon />
               </button>
-              {/* {navData.map(item =>{
+              {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
                   {item.icon}
                   <span className='linkText'>{item.text}</span>
                 </NavLink>
-              })} */}
+              })}
             </div>
           </div>
         : <div>
           <div>
             <div className='navmenuClosed'>
               <button className='navMenuButton' onClick={toggleOpen}>
-                {KeyboardDoubleArrowRightIcon}
+                <KeyboardDoubleArrowRightIcon />
               </button>
-              {/* {navData.map(item =>{
+              {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
                   {item.icon}
                   <span className='linkTextClosed'>{item.text}</span>
                 </NavLink>
-              })} */}
+              })}
             </div>
           </div>
         </div>
