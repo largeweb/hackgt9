@@ -38,6 +38,10 @@ function LoginPage() {
             onChange={(e) => setPassword(e.target.value)} />
 	  <Link to="/dashboard"><button className='menuButton'>Login</button></Link>
 
+    <div>
+      <p>{username}</p>
+    </div>
+
     <hr></hr>
     <hr></hr>
     <hr></hr>
