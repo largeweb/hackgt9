@@ -25,7 +25,7 @@ function IntroHomePage() {
 	  <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
 	  <Link to="/dashboard"><button className='menuButton'>Continue as Guest</button></Link>
 
-    <hr></hr>
+    {/* <hr></hr>
     <hr></hr>
     <hr></hr>
     <p>Dev Stuff</p>
@@ -36,7 +36,7 @@ function IntroHomePage() {
 	  <Link to="/dashboard"><button className='menuButton'>Home Dashboard /dashboard</button></Link>
 	  <Link to="/preferences"><button className='menuButton'>Preference Page /preferences</button></Link>
 	  <Link to="/directions"><button className='menuButton'>Direction Page /directions</button></Link>
-	  <Link to="/review"><button className='menuButton'>Review Page /review</button></Link>
+	  <Link to="/review"><button className='menuButton'>Review Page /review</button></Link> */}
     <Footer />
   </div>
  )
