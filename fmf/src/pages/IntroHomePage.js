@@ -22,7 +22,7 @@ function IntroHomePage() {
       {/* This is the Intro Home Page */}
       <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
       <Link to="/login"><button className='menuButton'>Continue with Google</button></Link>
-      <Link to="/dashboard"><button className='menuButton centeronly'>Continue as Guest</button></Link>
+      <Link to="/dashboard"><button className='smallLinkButton centeronly'><u>Continue as Guest</u></button></Link>
     </div>
 
     {/* <hr></hr>

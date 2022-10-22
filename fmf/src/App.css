@@ -305,3 +305,8 @@ navmain {
   width: 50%;
   margin-left: 25%;
 }
+
+.smallLinkButton {
+  color: gray;
+  background-color: blue;
+}
