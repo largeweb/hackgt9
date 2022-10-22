@@ -59,15 +59,17 @@ function HomeDashboardPage() {
         : <div />
       }
     </div>
-    <input
-            type="text"
-            placeholder="Password"
-            value={distance}
-            className='centeronly'
-            onChange={(e) => setDistance(e.target.value)} />
-    <Link to="/preferences"><button className='menuButton'>Continue</button></Link>
+    <div className='menuContainer aboutdiv'>
+      <input
+              type="text"
+              placeholder="Password"
+              value={distance}
+              className='centeronly'
+              onChange={(e) => setDistance(e.target.value)} />
+    </div>
+    <Link to="/preferences"><button className='menuButton centeronly'>Continue</button></Link>
     <br></br>
-	  <Link to="/"><button className='menuButton'>Log Out</button></Link>
+	  <Link to="/"><button className='menuButton centeronly'>Log Out</button></Link>
     <Footer />
   </div>
  )
