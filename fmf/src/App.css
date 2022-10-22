@@ -76,8 +76,8 @@
   font-size: 15px;
   padding: 15px;
   margin-left: 35%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 20%;
   border: 3px solid var(--border-color);
   text-align: center;
