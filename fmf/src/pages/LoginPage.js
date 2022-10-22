@@ -28,13 +28,13 @@ function LoginPage() {
             type="text"
             placeholder="Username"
             value={username}
-            className=''
+            className='loginInput'
             onChange={(e) => setUsername(e.target.value)} />
     <input
             type="text"
             placeholder="Password"
             value={password}
-            className=''
+            className='loginInput'
             onChange={(e) => setPassword(e.target.value)} />
 	  <Link to="/dashboard"><button className='menuButton'>Login</button></Link>
 
@@ -42,14 +42,6 @@ function LoginPage() {
       <p>{username}</p>
     </div>
 
-    <hr></hr>
-    <hr></hr>
-    <hr></hr>
-    <p>Dev Stuff</p>
-    <hr></hr>
-    <hr></hr>
-    <hr></hr>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )
