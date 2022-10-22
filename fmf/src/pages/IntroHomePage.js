@@ -16,7 +16,7 @@ import useLocalStorage from "use-local-storage"
 
 function IntroHomePage() {
  return (
-  <div className=''>
+  <div className='menuContainer'>
     <div className='mainTitle'><span className='bigTitleText centeronly'>FIND</span><br></br><span className='smallTitleText centeronly'>my</span><br></br><span className='bigTitleText centeronly'>FOOD</span></div>
     {/* This is the Intro Home Page */}
     <Link to="/login"><button className='menuButton'>Continue with Facebook</button></Link>
