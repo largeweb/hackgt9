@@ -7,6 +7,7 @@
 
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -278,7 +279,7 @@ img {
   background-color: #244f7d1c;
 }
 
-/* .menuBtn {
+.navMenuButton {
   align-self: center;
   align-self: flex-start;
   justify-self: flex-end;
@@ -287,4 +288,13 @@ img {
   border: none;
   cursor: pointer;
   padding-left: 20px;
-} */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+navmain {
+  padding: 10px;
+}

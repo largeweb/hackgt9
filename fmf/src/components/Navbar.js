@@ -1,13 +1,35 @@
 import React from "react";
 import {useState, useEffect} from "react"
+import { navData } from "../lib/navData";
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import './App.css';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+
+  const [open, setopen] = useState(true)
+
+  const toggleOpen = () => {
+    setopen(!open)
+  }
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
       <a className="navbar-brand navbarLabel" href="/">
         Find My Food
       </a>
+      <div className={open?'navmenu':'navmenuClosed'}>
+        <button className='navMenuButton' onClick={toggleOpen}>
+          {open?<KeyboardDoubleArrowLeftIcon />:KeyboardDoubleArrowIcon}
+        </button>
+        {navData.map(item =>{
+          return <NavLink key={item.id} className='navItem' to={item.link}>
+            {item.icon}
+            <span className={open?'linkText':'linkTextClosed'}>{item.text}</span>
+		       </NavLink>
+        })}
+      </div>
 
       {/* <button
         className="navbar-toggler"
