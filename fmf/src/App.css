@@ -1,0 +1,237 @@
+:root {
+  --border-color: #7b70b4;
+  --button-color: #b4d4fd;
+  --menu-color: #d4bdff;
+  --text-color: #000;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.menuButton {
+  width: 48%;
+  background: var(--button-color);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px;
+  margin: 1%;
+  border-radius: 20%;
+  border: 3px solid var(--border-color);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menuContainer {
+  width: 80%;
+  margin-left: 10%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content:center; */
+  /* background-color: rgb(226, 194, 255); */
+  background-color: var(--menu-color);
+  /* background-color: var(-menu-color); */
+  border: 5px solid var(--border-color);
+  border-radius: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+}
+
+.switchButton {
+  width: 90%;
+  /* margin: auto; */
+  color: var(--text-color);
+  margin-left: 5%;
+  /* margin-top: 10px; */
+  margin-bottom: 1%;
+  /* height: 30px; */
+  /* color: rgb(0, 0, 0); */
+  border-radius: 10%;
+  border: 3px solid var(--border-color);
+  background: var(--button-color);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbarLabel {
+  font-size: large;
+  margin: 0% 5%;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbarButton {
+  font-size: large;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.navcolor {
+  background: rgb(83, 152, 241);
+  margin-bottom: 2%;
+}
+
+.footertype {
+  background: rgb(220, 235, 255);
+  padding-top: 10px;
+}
+
+.homediv {
+  background-color: rgb(199, 216, 255);
+}
+
+.switchdiv {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  padding: 20px 5% 10px 5%;
+  width: 60%;
+  height: 20%;
+  background-color: var(--menu-color);
+  border: 5px solid var(--border-color);
+  /* border: 2px solid rgb(201, 201, 255); */
+  border-radius: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1px;
+}
+
+.menuHeader {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.childcareimage {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.childcareTopDiv {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  padding: 10px;
+  /* height: 100px; */
+  border-radius: 10%;
+  border: 2px solid var(--border-color);
+}
+
+.aboutdiv {
+  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: var(--menu-color);
+  border-radius: 10%;
+}
+
+.inputfield {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.biggerfont {
+  font-size: 15px;
+}
+
+.loginbutton {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.centeronly {
+  text-align: center;
+}
+
+img {
+  width: 80%;
+  margin-left: 10%;
+  border: 5px solid var(--border-color);
+  margin: 20px;
+}
+
+.loginnotice {
+  color: red;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  opacity: 0.8;
+}
+
+.infonotice {
+  color: blue;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  opacity: 0.8;
+}
+
+.seatdiv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  font-size: 10px;
+  border-radius: 10%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.doubleseatdiv {
+  font-size: 10px;
+  background-color: red;
+  margin: 5px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10%;
+  height: 100px;
+}
