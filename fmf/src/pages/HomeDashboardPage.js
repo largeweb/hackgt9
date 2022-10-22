@@ -36,7 +36,7 @@ function HomeDashboardPage() {
       <div className='centeronly' style={{marginBottom:"20px"}}>Price</div>
       {pricelevel === "1"
         ? <div>
-            <div className='selectedPriceLevel'>$</div>
+            <div className='priceItem selectedPriceLevel'>$</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('2')}>$$</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('3')}>$$$</div>
           </div>
@@ -45,7 +45,7 @@ function HomeDashboardPage() {
       {pricelevel === "2"
         ? <div>
             <div className='priceItem' onClick={(e) => setPriceLevel('1')}>$</div>
-            <div className='selectedPriceLevel'>$$</div>
+            <div className='priceItem selectedPriceLevel'>$$</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('3')}>$$$</div>
           </div>
         : <div />
