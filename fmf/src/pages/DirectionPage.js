@@ -42,8 +42,14 @@ function DirectionPage() {
         const data = await response.json();
         console.log("FINISHED AWAITING");
         console.log(data);
-        console.log(data.results[0].name);
-        setRestaurantChoice(data.results[0].name);
+        restaurantName = data.results[0].name;
+        restaurantPriceLevel = data.results[0].price_level;
+        restaurantRating = data.results[0].rating;
+        console.log("restaurant name: " + restaurantName);
+        console.log("restaurant price level: " + restaurantPriceLevel);
+        console.log("restaurant rating: " + restaurantRating);
+        console.log(data.results[0].photos[0].htmlAttributions[0]);
+        setRestaurantChoice(restaurantName);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
         // console.log(locationDict.name)
