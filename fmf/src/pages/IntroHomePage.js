@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 import useLocalStorage from "use-local-storage"
-import { signInWithGoogle } from "./services/firebase";
+import { signInWithGoogle } from "../firebase";
 
 // this page has continue with facebook/google OR continue as guest
 // continue as guest will link straight to dashboard page
