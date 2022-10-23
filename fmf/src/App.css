@@ -385,13 +385,13 @@ navmain {
 }
 
 .midTitleText {
-  font-size: 50px;
+  font-size: 40px;
   color: var(--big-title-text);
   font-weight: 700;
 }
 
 .smallTitleText {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--small-title-text);
 }
