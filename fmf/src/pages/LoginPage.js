@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 import useLocalStorage from "react-use-localstorage"
+import { BadgeMark } from '@mui/material';
 
 // login page is just user pass fields and a button that brings to dashboard page
 
@@ -20,23 +21,25 @@ function LoginPage() {
  return (
   <div className='mainTitleMenu'>
     <Navbar />
-      <div className='bigTitleText'>Please Login</div>
-
+      <div className='bigTitleText centeronly' style={{marginBottom:"100px"}}>Please Login</div>
       <input
               type="text"
               placeholder="Username"
               value={username}
               className='loginInput'
+              width="200px"
               onChange={(e) => setUsername(e.target.value)} />
       <input
               type="text"
               placeholder="Password"
               value={password}
               className='loginInput'
+              width="200px"
               onChange={(e) => setPassword(e.target.value)} />
-      <Link to="/dashboard"><button className='menuButton centeronly'>Login</button></Link>
-
-      <Link to="/"><button className='menuButton centeronly'>Back</button></Link>
+      <br></br>
+      <Link to="/dashboard"><button className='button-google centeronly' style={{marginBottom:"3%"}}>Login</button></Link>
+      <brk></brk>
+      <Link to="/"><button className='button-google centeronly'>Back</button></Link>
 
     <Footer />
   </div>
