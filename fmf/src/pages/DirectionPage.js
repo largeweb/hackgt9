@@ -42,7 +42,9 @@ function DirectionPage() {
   }
 
   const getLocation = async (maxPrice, radius, keyWord) => {
+    console.log("before if")
     if ("geolocation" in navigator) {
+      console.log("inside if")
       navigator.geolocation.getCurrentPosition(async function(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
