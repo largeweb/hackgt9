@@ -21,7 +21,7 @@ function LoginPage() {
  return (
   <div className='mainTitleMenu'>
     <Navbar />
-      <div className='bigTitleText centeronly' style={{marginBottom:"100px"}}>Please Login</div>
+      <div className='midTitleText centeronly' style={{marginBottom:"100px"}}>Please Login</div>
       <input
               type="text"
               placeholder="Username"
