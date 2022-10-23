@@ -25,25 +25,25 @@ function PreferencePage() {
       <div class="grid-item">
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' />
-          <span style={{width:"30%"}}>Texan</span>
+          {/* <span style={{width:"30%"}}>Texan</span> */}
         </div>
       </div>
       <div class="grid-item">
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' />
-          <span style={{width:"30%"}}>American</span>
+          {/* <span style={{width:"30%"}}>American</span> */}
         </div>
       </div>
       <div class="grid-item">
         <div className="picture-frame">
-          <img style={{width:"20%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
-          <span style={{width:"10%"}}>Chinese</span>
+          <img style={{width:"30%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
+          {/* <span style={{width:"30%"}}>Chinese</span> */}
         </div>
       </div>
       <div class="grid-item">
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://sharpaspirant.com/wp-content/uploads/2021/02/Breakfast-Sandwich-22-500x500.jpg' alt='sandwich' />
-          <span style={{width:"30%"}}>European</span>
+          {/* <span style={{width:"30%"}}>European</span> */}
         </div>
       </div>
     </div>
@@ -54,25 +54,25 @@ function PreferencePage() {
       {/* <div class="grid-item"> */}
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' />
-          <span style={{width:"30%"}}>Paleo</span>
+          {/* <span style={{width:"30%"}}>Paleo</span> */}
         </div>
       {/* </div> */}
       {/* <div class="grid-item"> */}
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' />
-          <span style={{width:"30%"}}>HotDog</span>
+          {/* <span style={{width:"30%"}}>HotDog</span> */}
         </div>
       {/* </div> */}
       {/* <div class="grid-item"> */}
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
-          <span style={{width:"30%"}}>Vegetarian</span>
+          {/* <span style={{width:"30%"}}>Vegetarian</span> */}
         </div>
       {/* </div> */}
       {/* <div class="grid-item"> */}
         <div className="picture-frame">
           <img style={{width:"30%"}} src='https://sharpaspirant.com/wp-content/uploads/2021/02/Breakfast-Sandwich-22-500x500.jpg' alt='sandwich' />
-          <span style={{width:"30%"}}>Kosher</span>
+          {/* <span style={{width:"30%"}}>Kosher</span> */}
         </div>
       {/* </div> */}
     </div>
