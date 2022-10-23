@@ -4,6 +4,15 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 export default function Footer() {
   return (
+      <div className='text-center p-4 footer-cs' >
+        © 2022 Copyright:<br></br>
+        <a className='text-reset fw-bold' href='/'>
+          FMF Team HackGT
+        </a>
+      </div>
+  )
+}
+   { /*
     <MDBFooter className='footertype text-center text-lg-start text-muted'>
       {/* <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
@@ -77,14 +86,4 @@ export default function Footer() {
           {/* </div>
         </div>
       </section> */}
-
-      <div className='text-center p-4 footer-cs' >
-        © 2022 Copyright:<br></br>
-        <a className='text-reset fw-bold' href='/'>
-          FMF Team HackGT
-        </a>
-      </div>
-      
-    </MDBFooter>
-  );
-}
+   // </MDBFooter>

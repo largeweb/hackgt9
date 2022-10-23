@@ -17,8 +17,8 @@ import useLocalStorage from "use-local-storage"
 function IntroHomePage() {
  return (
   <div className='mainTitleMenu'>
-    <div className='centeronly' style={{marginTop:"5%", marginBottom:"10%"}}>
-      <h1 className='bigTitleText centeronly' style={{marginBottom:"0"}}>FIND</h1>
+    <div className='centeronly' style={{marginBottom:"10%"}}>
+      <h1 className='bigTitleText centeronly' style={{marginTop:"5%", marginBottom:"0"}}>FIND</h1>
       <h2 className='smallTitleText centeronly' style={{marginBottom: "0", marginTop:"0"}}>my</h2>
       <h3 className='bigTitleText centeronly' style={{marginTop:"0"}}>FOOD</h3>
     </div>
