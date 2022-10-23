@@ -16,7 +16,7 @@ function PreferencePage() {
  return (
   <div className='homediv'>
     <Navbar />
-    <div className='midTitleText centeronly' style={{color:"#5838b4"}}>
+    <div className='midTitleText centeronly' style={{color:"white"}}>
       Preference
     </div>
     <hr></hr>
