@@ -22,7 +22,7 @@ function DirectionPage() {
     console.log("locationDict for price level 2, distance of 10000, chinese")
     getLocation(2,1500,"chinese")
     console.log("set location dict")
-    setTimeout(console.log(locationDict.name), 2000);
+    // setTimeout(console.log(locationDict.name), 2000);
   });
 
   var locationDict;
@@ -31,15 +31,32 @@ function DirectionPage() {
     window.location.reload(false);
   }
 
+  const getLocation = async (maxPrice, radius, keyWord) => {
+      try {
+          console.log("beggining of function, setting vars")
+          const latitude = 33.785061
+          const longitude = -84.379936
+          console.log("running fetch locations")
+          const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
+          console.log("setting index to location length floor")
+          const index = Math.floor(Math.random() * await locations.length);
+          console.log("setting loc to await locations at index")
+          const loc = await locations[index];
+          console.log("setting location dict")
+          locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
+          console.log("print location dict")
+          console.log(locationDict);
+      } catch (err) {
+        console.log("error");
+        console.log(err);
+      }
+      console.log("outside try catch")
+    }
+
   const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
-    const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
-    const apiString2 = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag';
     const expressApi = 'localhost:3000/getnearby/2/1500/chinese';
       console.log("about to run response fetch with apistring2")
-    const response = await fetch(expressApi, {
-      method: 'GET',
-      headers: {'Content-Type': 'application/json'}
-    });
+    const response = await fetch(expressApi).then((response) => response.json()).then((data) => console.log(data));
       console.log("about to set data")
     const data = await response.json();
       console.log("about to return await results")
@@ -89,28 +106,6 @@ function DirectionPage() {
   //     }
   //   }
   // }
-
-  const getLocation = async (maxPrice, radius, keyWord) => {
-      try {
-          console.log("beggining of function, setting vars")
-          const latitude = 33.785061
-          const longitude = -84.379936
-          console.log("running fetch locations")
-          const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
-          console.log("setting index to location length floor")
-          const index = Math.floor(Math.random() * await locations.length);
-          console.log("setting loc to await locations at index")
-          const loc = await locations[index];
-          console.log("setting location dict")
-          locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
-          console.log("print location dict")
-          console.log(locationDict);
-      } catch (err) {
-        console.log("error");
-        console.log(err);
-      }
-      console.log("outside try catch")
-    }
     // else {
     //   console.log("Find My Food cannot access your location's coordinates from your browser. Please enable location sharing or try using a different browser.");
     // }
