@@ -42,6 +42,8 @@ function DirectionPage() {
         const data = await response.json();
         console.log("FINISHED AWAITING");
         console.log(data);
+        console.log(data.results[0].name);
+        setRestaurantChoice(data.results[0].name);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
         // console.log(locationDict.name)
