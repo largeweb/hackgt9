@@ -568,7 +568,7 @@ navmain {
   vertical-align: baseline;
   width: 30%;
   box-shadow: gray 0px 7px 14px;
-  margin: auto;
+  margin-left: 20%;
 }
 
 .grid-item {
