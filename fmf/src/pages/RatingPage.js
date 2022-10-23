@@ -41,7 +41,7 @@ function RatingPage() {
     <hr></hr>
 	  <Link to="/dashboard"><button className='button-google centeronly'>Dashboard</button></Link>
     <Footer/>
-    <div style={{bottom:"0"}} ></div>
+    {/* <div style={{bottom:"0"}} ></div> */}
   </div>
  )
 }
