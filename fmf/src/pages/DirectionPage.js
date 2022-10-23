@@ -15,11 +15,18 @@ import useLocalStorage from "use-local-storage"
 // show google map and provide address
 
 function DirectionPage() {
+
+  const [restaurantChoice, setRestaurantChoice] = useLocalStorage({restaurant:"Joe's Pizza"})
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
  return (
   <div className='homediv'>
     <Navbar />
     <div className='menuContainer aboutdiv'>
-      This is the Direction Page
+      Directions to {restaurantChoice}
     </div>
     <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
     <div className='menuContainer aboutdiv'>
@@ -27,6 +34,8 @@ function DirectionPage() {
     </div>
 	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+    <br></br>
+	  <Link to="/directions"><button className='menuButton' onClick={refreshPage}>Go Back Home</button></Link>
     <Footer />
   </div>
  )
