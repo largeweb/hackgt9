@@ -14,7 +14,8 @@ app.get('/getnearby/:pricelevel/:radius/:keyword', (req, res) => {
   function (error, stdout, stderr) {
  console.log('stdout: ' + stdout);
  console.log('stderr: ' + stderr);
- res.send(stdout);
+ const obj = JSON.parse(stdout);
+ res.json(obj);
  retString = stdout;
  if (error !== null) {
       console.log('exec error: ' + error);
