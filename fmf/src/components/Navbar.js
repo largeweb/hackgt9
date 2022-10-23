@@ -24,11 +24,11 @@ const Navbar = () => {
 }
       {open
         ? <div>
-            <a className="" style={{backgroundColor:"black"}} href="/">
+            <a className="navbar-brand navbarLabel" style={{backgroundColor:"black",width:"100%"}} href="/">
               Find My Food
             </a>
             <div className='navmenu'>
-              <button className='' style={{backgroundColor:"black",width:"100%"}} onClick={toggleOpen}>
+              <button className='' style={{backgroundColor:"black",width:"80%",marginLeft:"10%"}} onClick={toggleOpen}>
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange", padding:"10px"}} /> */}
