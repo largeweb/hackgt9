@@ -27,8 +27,8 @@ const Navbar = () => {
             <a className="navbar-brand navbarLabel" style={{backgroundColor:"black"}} href="/">
               Find My Food
             </a>
-            <div className='navmenu'>
-              <button className='' style={{backgroundColor:"black"}} onClick={toggleOpen}>
+            <div className='navmenu' style={{backgroundColor:"black"}}>
+              <button className='' onClick={toggleOpen}>
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange", padding:"10px"}} /> */}
