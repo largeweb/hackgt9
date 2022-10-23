@@ -42,7 +42,7 @@ function DirectionPage() {
       console.log("about to set data")
     const data = await response.json();
       console.log("about to return await results")
-    return await data.results;
+    return data.results;
   }
 
   const getLocation = async (maxPrice, radius, keyWord) => {
