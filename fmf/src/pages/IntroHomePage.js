@@ -9,40 +9,12 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 import useLocalStorage from "use-local-storage"
-// import { signInWithGoogle } from "../firebase";
-import { getAuth, signInWithPopup, signInWithRedirect, getRedirectResult, GoogleAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
-import auth from "../firebase";
-
-
-const provider = new GoogleAuthProvider();
 
 // this page has continue with facebook/google OR continue as guest
 // continue as guest will link straight to dashboard page
 // continue with facebook/google will link to login page
 
 function IntroHomePage() {
-
-// signInWithPopup(auth, provider)
-//   .then((result) => {
-//     // This gives you a Google Access Token. You can use it to access the Google API.
-//     const credential = GoogleAuthProvider.credentialFromResult(result);
-//     const token = credential.accessToken;
-//     // The signed-in user info.
-//     const user = result.user;
-//     // ...
-//   }).catch((error) => {
-//     // Handle Errors here.
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // The email of the user's account used.
-//     const email = error.customData.email;
-//     // The AuthCredential type that was used.
-//     const credential = GoogleAuthProvider.credentialFromError(error);
-//     // ...
-//   });
-
-  // signInWithRedirect(auth, provider);
-
  return (
   <div className='mainTitleMenu'>
     <div className='centeronly' style={{marginBottom:"10%"}}>
@@ -52,9 +24,9 @@ function IntroHomePage() {
     </div>
     {/* This is the Intro Home Page */}
     <div className='centeronly' style={{marginBottom:"2%", color:"orange"}}>Search Now!</div>
-    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}} onClick={{}}>Continue with Facebook</button></Link>
+    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}}>Continue with Facebook</button></Link>
     <br></br>
-    <button className='button-google' onClick={signInWithRedirect(auth, provider)}>Continue with Google</button>
+    <Link to="/login"><button className='button-google'>Continue with Google</button></Link>
     <br></br>
     <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"200px"}}></div>
