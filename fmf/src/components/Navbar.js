@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
       {!open &&
             <a className="navbar-brand navbarLabel" href="/">
-              FINDmyFOOD 
+              FINDmyFOOD
             </a>
       }
       {open
