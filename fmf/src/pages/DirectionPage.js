@@ -21,7 +21,7 @@ function DirectionPage() {
 
   useEffect(() => {
     console.log("locationDict for price level 2, distance of 10000, chinese")
-    getLocation(2,1500,"chinese")
+    getLocation(3,2000,"indian")
     console.log("set location dict")
     // setTimeout(console.log(locationDict.name), 2000);
   });
@@ -35,7 +35,8 @@ function DirectionPage() {
   const getLocation = async (maxPrice, radius, keyWord) => {
       try {
         console.log("RUNNING FETCH");
-        const response = await fetch('http://findmyfood.xyz:3000/getnearby/2/1500/chinese', {
+        const fetchUrl = 'http://findmyfood.xyz:3000/getnearby/' + maxPrice + '/' + radius + '/' + keyWord;
+        const response = await fetch(fetchUrl, {
           method: 'GET',
           mode: 'cors'
         });
