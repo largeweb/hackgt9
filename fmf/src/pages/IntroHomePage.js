@@ -17,19 +17,18 @@ import useLocalStorage from "use-local-storage"
 function IntroHomePage() {
  return (
   <div className='mainTitleMenu'>
-    <div className='centeronly'>
-      <span className='bigTitleText centeronly'>FIND</span>
-      <br></br>
-      <span className='smallTitleText centeronly'>my</span>
-      <br></br>
-      <span className='bigTitleText centeronly'>FOOD</span>
+    <div className='centeronly' style={{marginTop:"5%", marginBottom:"10%"}}>
+      <div className='bigTitleText centeronly' style={{marginBottom:"0"}}>FIND</div>
+      <div className='smallTitleText centeronly'>my</div>
+      <div className='bigTitleText centeronly'>FOOD</div>
     </div>
     {/* This is the Intro Home Page */}
-    <Link to="/login"><button className='menuButton centeronly'>Continue with Facebook</button></Link>
+    <div className='centeronly' style={{marginBottom:"2%"}}>Search Now!</div>
+    <Link to="/login"><button className='button-google'>Continue with Facebook</button></Link>
     <br></br>
-    <Link to="/login"><button className='menuButton centeronly'>Continue with Google</button></Link>
+    <Link to="/login"><button className='button-google'>Continue with Google</button></Link>
     <br></br>
-    <Link to="/dashboard"><button className='smallLinkButton'><u>Continue as Guest</u></button></Link>
+    <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"200px"}}></div>
 
     {/* <hr></hr>

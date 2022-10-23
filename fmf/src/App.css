@@ -1,6 +1,6 @@
 :root {
   --app-header-color: #282c34;
-  --border-color: #7b70b4;
+  --border-color: #5838B4;
   --button-color: #b4d4fd;
   --menu-color: #d4bdff;
   --text-color: #000;
@@ -221,7 +221,8 @@ p {
 .centeronly {
   text-align: center;
   width: 50%;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -329,6 +330,14 @@ navmain {
   padding: 10px;
 }
 
+.astext {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 .smallLinkButton {
   color: var(--small-link-btn-color);
   align-content: center;
@@ -390,7 +399,7 @@ navmain {
   box-sizing: border-box;
   color: #3c4043;
   cursor: pointer;
-  display: inline-flex;
+  display: block;
   fill: currentcolor;
   font-family: "Google Sans",Roboto,Arial,sans-serif;
   font-size: 14px;
@@ -401,6 +410,8 @@ navmain {
   line-height: normal;
   max-width: 100%;
   overflow: visible;
+  margin-left:auto;
+  margin-right:auto;
   padding: 2px 24px;
   position: relative;
   text-align: center;
@@ -409,7 +420,7 @@ navmain {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: auto;
+  width: 250px;
   will-change: transform,opacity;
   z-index: 0;
 }
