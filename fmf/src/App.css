@@ -97,7 +97,7 @@
   /* justify-content:center; */
   /* background-color: rgb(226, 194, 255); */
   background-color: var(--menu-color);
-  /* background-color: var(-menu-color); */
+  /* background-color: var(-menu-color); *
   border: 5px solid var(--border-color);
   border-radius: 30%;
   padding: 10px;
@@ -498,7 +498,7 @@ navmain {
 
 .slider {
   position: relative;
-  width: 500px;
+  width: 40%;
   height: 40px;
   padding: 30px;
   margin: auto;
