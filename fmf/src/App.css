@@ -371,7 +371,7 @@ navmain {
   background-color: #6443ba;
 }
 
-.navmenu-icon-open {
+.navmenu-icon {
   background-color: var(--navmenu-btn-color);
   font-size: 30px;
   padding: 5px;

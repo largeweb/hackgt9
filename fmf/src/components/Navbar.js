@@ -22,7 +22,7 @@ const Navbar = () => {
       {open
         ? <div>
             <div className='navmenu'>
-              <button className='navmenu-icon-open' onClick={toggleOpen}>
+              <button className='navmenu-icon' style={{padding:"10px"}} onClick={toggleOpen}>
                 <KeyboardDoubleArrowLeftIcon />
               </button>
               {navData.map(item =>{
@@ -36,7 +36,7 @@ const Navbar = () => {
         : <div>
           <div>
             <div className='navmenuClosed'>
-              <button className='navMenuButton' onClick={toggleOpen}>
+              <button className='navmenu-icon' onClick={toggleOpen}>
                 <KeyboardDoubleArrowRightIcon />
               </button>
               {/* {navData.map(item =>{
