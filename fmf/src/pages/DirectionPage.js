@@ -40,6 +40,7 @@ function DirectionPage() {
           method: 'GET',
           mode: 'cors'
         });
+        console.log("TRYING TO GET LATITUDE");
         navigator.geolocation.getCurrentPosition((position) => {
           console.log(position.coords.latitude + "%2C" + position.coords.longitude);
         });
