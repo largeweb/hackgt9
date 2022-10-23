@@ -37,13 +37,13 @@ function PreferencePage() {
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>Texan</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>Texan</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>American</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>American</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
@@ -61,13 +61,13 @@ function PreferencePage() {
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>Chinese</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>Chinese</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>European</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>European</span>
         {/* </div> */}
       </div>
     </div>
@@ -90,13 +90,13 @@ function PreferencePage() {
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>Paleo</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>Paleo</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>HotDog</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>HotDog</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
@@ -114,13 +114,13 @@ function PreferencePage() {
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>Vegetarian</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>Vegetarian</span>
         {/* </div> */}
       </div>
       <div class="grid-item">
         {/* <div className="picture-frame"> */}
           {/* <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' /> */}
-          <span style={{width:"30%", marginLeft:"20%", textAlign:"center"}}>Kosher</span>
+          <span style={{width:"30%", marginLeft:"20%", textAlign:"center",color:"white"}}>Kosher</span>
         {/* </div> */}
       </div>
     </div>
