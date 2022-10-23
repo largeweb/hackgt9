@@ -17,6 +17,7 @@ import useLocalStorage from "use-local-storage"
 function DirectionPage() {
 
   const [restaurantChoice, setRestaurantChoice] = useLocalStorage('restaurantChoice','Joes Pizza')
+  const [atag, setAtag] = useLocalStorage('atag','')
 
   useEffect(() => {
     console.log("locationDict for price level 2, distance of 10000, chinese")
@@ -48,7 +49,8 @@ function DirectionPage() {
         console.log("restaurant name: " + restaurantName);
         console.log("restaurant price level: " + restaurantPriceLevel);
         console.log("restaurant rating: " + restaurantRating);
-        console.log(data.results[0].photos[0]["html_attributions"][0]);
+        atagret = (data.results[0].photos[0]["html_attributions"][0]);
+        setAtag(atagret);
         setRestaurantChoice(restaurantName);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
@@ -126,6 +128,7 @@ function DirectionPage() {
       Directions to {restaurantChoice}
     </div>
     <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
+    {atag}
     <div className='menuContainer aboutdiv'>
       Start Journey
     </div>
