@@ -33,8 +33,11 @@ function DirectionPage() {
 
   const getLocation = async (maxPrice, radius, keyWord) => {
       try {
+        console.log("RUNNING FETCH");
         const response = await fetch('http://findmyfood.xyz:3000/getnearby/2/1500/chinese');
+        console.log("FINISHED FETCH, AWAITING RESPONSE");
         const data = await response.json();
+        console.log("FINISHED AWAITING");
         console.log(data);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
