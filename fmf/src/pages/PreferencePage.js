@@ -45,12 +45,12 @@ function PreferencePage() {
           <span>European</span>
         </div>
       </div>
-    </div> 
+    </div>
     <h1 className='smallTitleText' style={{marginLeft:"5%"}}>Restrictions</h1>
 
 	  <Link to="/directions"><button className='button-google'>Submit</button></Link>
     <br></br>
-	  <Link to="/"><button className='button-google'>Go Back Home</button></Link>
+	  <Link to="/dashboard"><button className='button-google'>Back</button></Link>
     <Footer />
   </div>
  )

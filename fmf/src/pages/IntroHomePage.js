@@ -30,6 +30,7 @@ function IntroHomePage() {
     <br></br>
     <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"200px"}}></div>
+    <h2 className='smallTitleText centeronly' >Make sure this App is added to your Home Screen for the Best User Experience</h2>
 
     {/* <hr></hr>
     <hr></hr>
