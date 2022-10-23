@@ -42,9 +42,9 @@ function DirectionPage() {
         const data = await response.json();
         console.log("FINISHED AWAITING");
         console.log(data);
-        restaurantName = data.results[0].name;
-        restaurantPriceLevel = data.results[0].price_level;
-        restaurantRating = data.results[0].rating;
+        const restaurantName = data.results[0].name;
+        const restaurantPriceLevel = data.results[0].price_level;
+        const restaurantRating = data.results[0].rating;
         console.log("restaurant name: " + restaurantName);
         console.log("restaurant price level: " + restaurantPriceLevel);
         console.log("restaurant rating: " + restaurantRating);
