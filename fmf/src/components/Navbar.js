@@ -5,6 +5,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import '../App.css';
 import { NavLink } from "react-router-dom";
+import hamburgerIcon from "../images/hamburger-blue.svg";
 
 const Navbar = () => {
 
@@ -16,14 +17,22 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
-      <a className="navbar-brand navbarLabel" href="/"> 
-        FINDmyFOOD
-      </a>
+      {!open &&
+            <a className="navbar-brand navbarLabel" href="/">
+              FINDmyFOOD 
+            </a>
+      }
       {open
-        ? <div>
+        ? <div style={{backgroundColor:"black",width:"40%",top:"0",bottom:"0",padding:"10px"}}>
+            <div className="navbar-brand navbarLabel" style={{backgroundColor:"black",width:"100%"}}>
+              Find My Food
+            </div>
             <div className='navmenu'>
-              <button className='navmenu-icon' style={{padding:"10px",background:"none"}} onClick={toggleOpen}>
-                <KeyboardDoubleArrowLeftIcon />
+              <button className='' style={{backgroundColor:"black",width:"80%",marginLeft:"10%"}} onClick={toggleOpen}>
+                {/* <KeyboardDoubleArrowLeftIcon /> */}
+                {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
+                {/* <hamburgerIcon style={{backgroundColor:"orange", padding:"10px"}} /> */}
+                <img src={hamburgerIcon} style={{width:"26px", height:"26px"}} />
               </button>
               {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
@@ -36,8 +45,11 @@ const Navbar = () => {
         : <div>
           <div>
             <div className='navmenuClosed'>
-              <button className='navmenu-icon' onClick={toggleOpen}>
-                <KeyboardDoubleArrowRightIcon />
+              <button className='' style={{backgroundColor:"#5838b4"}} onClick={toggleOpen}>
+                {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
+                {/* <KeyboardDoubleArrowLeftIcon /> */}
+                {/* <hamburgerIcon style={{backgroundColor:"orange",padding:"10px"}} /> */}
+                <img src={hamburgerIcon} style={{width:"26px", height:"26px"}} />
               </button>
               {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>

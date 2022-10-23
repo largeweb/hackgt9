@@ -42,6 +42,14 @@ function DirectionPage() {
           method: 'GET',
           mode: 'cors'
         });
+        console.log("TRYING TO GET LATITUDE");
+        if ('geolocation' in navigator) {
+          navigator.geolocation.getCurrentPosition((position) => {
+            console.log(position.coords.latitude + "%2C" + position.coords.longitude);
+          });
+        } else {
+          console.log("NOT EXISTING GEOLOCATION STUFF")
+        }
         console.log("FINISHED FETCH, AWAITING RESPONSE");
         const data = await response.json();
         console.log("FINISHED AWAITING");
