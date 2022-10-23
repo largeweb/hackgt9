@@ -16,7 +16,7 @@ import useLocalStorage from "use-local-storage"
 
 function DirectionPage() {
 
-  const [restaurantChoice, setRestaurantChoice] = useLocalStorage({"restaurantChoice":'Joes Pizza'})
+  const [restaurantChoice, setRestaurantChoice] = useLocalStorage('restaurantChoice','Joes Pizza')
 
   function refreshPage() {
     window.location.reload(false);
