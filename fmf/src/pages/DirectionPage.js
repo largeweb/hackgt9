@@ -34,11 +34,14 @@ function DirectionPage() {
   const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
     const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
     const apiString2 = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag';
+      console.log("about to run response fetch with apistring2")
     const response = await fetch(apiString2, {
       method: 'GET',
       headers: {'Content-Type': 'application/json'}
     });
+      console.log("about to set data")
     const data = await response.json();
+      console.log("about to return await results")
     return await data.results;
   }
 
