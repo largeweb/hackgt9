@@ -23,10 +23,10 @@ function RatingPage() {
     <div>
       Rate your Experience
     </div>
-    <div className='menuContainer aboutdiv'>
+    <div className='menuContainer aboutdiv' style={{fontWeight:"40px"}}>
       🌟🌟🌟🌟🌟
     </div>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/dashboard"><button className='menuButton centeronly'>Dashboard</button></Link>
     <Footer />
   </div>
  )
