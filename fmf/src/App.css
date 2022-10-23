@@ -544,12 +544,12 @@ navmain {
 .grid-container {
   /* margin: auto; */
   display: inline;
-  grid-template-columns: 1fr repeat(2, 60px);
-  grid-template-rows: auto;
+  /* grid-template-columns: 1fr repeat(2, 60px); */
+  /* grid-template-rows: auto; */
 }
 
 .picture-frame {
-  align-items: center;
+  /* align-items: center; */
   background-color: #ffffff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 25px;
@@ -561,7 +561,7 @@ navmain {
   /* justify-content: center; */
   /* position: relative; */
   text-decoration: none;
-  text-align: center;
+  /* text-align: center; */
   /* user-select: none; */
   -webkit-user-select: none;
   touch-action: manipulation;
