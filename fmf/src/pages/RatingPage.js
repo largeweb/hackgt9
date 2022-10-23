@@ -40,7 +40,8 @@ function RatingPage() {
 	  <Link to="/dashboard"><button className='button-google centeronly'>Submit</button></Link>
     <hr></hr>
 	  <Link to="/dashboard"><button className='button-google centeronly'>Dashboard</button></Link>
-    <Footer style={{bottom:"0px"}} />
+    <Footer/>
+    <div style={{bottom:"0"}}></div>
   </div>
  )
 }
