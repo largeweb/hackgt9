@@ -7,7 +7,7 @@
   --navmenu-btn-color: black;
   --navmenu-icon-color: purple;
   --navmenu-item-color: white;
-  --small-link-btn-color: gray;
+  --small-link-btn-color: white;
   --footer-background: rgb(220, 235, 255);
   --app-link-color: #61dafb;
   --home-div-bg-color: rgb(199, 216, 255);
@@ -365,7 +365,7 @@ navmain {
 }
 
 .bigTitleText {
-  font-size: 70px;
+  font-size: 80px;
   color: var(--big-title-text);
   font-weight: 700;
 }
@@ -377,7 +377,8 @@ navmain {
 }
 
 .mainTitleMenu {
-  background-color: #6443ba;
+  background-color: #5838B4;
+  top: 0;
 }
 
 .navmenu-icon {
