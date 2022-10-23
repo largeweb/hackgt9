@@ -5,7 +5,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import '../App.css';
 import { NavLink } from "react-router-dom";
-import hamburgerIcon from "../images/hamburgerIcon.png";
+import hamburgerIcon from "../images/hamburgermenu.svg";
 
 const Navbar = () => {
 
