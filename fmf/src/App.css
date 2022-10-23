@@ -398,7 +398,8 @@ navmain {
 
 .mainTitleMenu {
   background-color: #5838b4;
-  /* padding: 30px; */
+  padding-top: 30px;
+  padding-bottom: -30px;
 }
 
 .navmenu-icon {
