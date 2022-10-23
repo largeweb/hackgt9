@@ -18,13 +18,13 @@ function IntroHomePage() {
  return (
   <div className='mainTitleMenu'>
     <div className='centeronly' style={{marginTop:"5%", marginBottom:"10%"}}>
-      <div className='bigTitleText centeronly' style={{marginBottom:"0"}}>FIND</div>
-      <div className='smallTitleText centeronly'>my</div>
-      <div className='bigTitleText centeronly'>FOOD</div>
+      <h1 className='bigTitleText centeronly' style={{marginBottom:"0"}}>FIND</h1>
+      <h2 className='smallTitleText centeronly' style={{marginBottom: "0", marginTop:"0"}}>my</h2>
+      <h3 className='bigTitleText centeronly' style={{marginTop:"0"}}>FOOD</h3>
     </div>
     {/* This is the Intro Home Page */}
-    <div className='centeronly' style={{marginBottom:"2%"}}>Search Now!</div>
-    <Link to="/login"><button className='button-google'>Continue with Facebook</button></Link>
+    <div className='centeronly' style={{marginBottom:"2%", color:"orange"}}>Search Now!</div>
+    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}}>Continue with Facebook</button></Link>
     <br></br>
     <Link to="/login"><button className='button-google'>Continue with Google</button></Link>
     <br></br>
