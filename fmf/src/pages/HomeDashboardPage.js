@@ -33,11 +33,10 @@ function HomeDashboardPage() {
     </div> */}
     <Link to="/preferences"><button className='randomChooseButton'>Filter</button></Link>
     <div className='menuContainer aboutdiv' style={{marginBottom:"3%"}}>
-      <div className='centeronly smallTitleText' style={{marginTop:"3%"}}>Price</div>
+      <div className='centeronly smallTitleText'>Price</div>
       <hr></hr> 
       {pricelevel === "1"
-        ? <div>
-            <br></br>
+        ? <div id="grid">
             <div className='priceItem selectedPriceLevel'>💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('2')}>💲💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('3')}>💲💲💲</div>
@@ -45,7 +44,7 @@ function HomeDashboardPage() {
         : <div />
       }
       {pricelevel === "2"
-        ? <div>
+        ? <div id="grid">
             <div className='priceItem' onClick={(e) => setPriceLevel('1')}>💲</div>
             <div className='priceItem selectedPriceLevel'>💲💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('3')}>💲💲💲</div>
@@ -53,7 +52,7 @@ function HomeDashboardPage() {
         : <div />
       }
       {pricelevel === "3"
-        ? <div>
+        ? <div id="grid">
             <div className='priceItem' onClick={(e) => setPriceLevel('1')}>💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('2')}>💲💲</div>
             <div className='selectedPriceLevel priceItem'>💲💲💲</div>
@@ -63,16 +62,13 @@ function HomeDashboardPage() {
     </div>
     <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
       <div className='centeronly smallTitleText'>Distance</div>
-      <div className='centeronly'>Within</div>
-      <input
-              type="text"
-              placeholder="Distance"
-              value={distance}
-              className='centeronly'
-              onChange={(e) => setDistance(e.target.value)} />
-      <div className='centeronly'>Miles</div>
+      <hr></hr>
+      <div class="slider">
+        <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value"/>
+        <p id="rangeValue">100</p>
+      </div>
     </div>
-    <Link to="/preferences"><button className='button-google centeronly'>Continue</button></Link>
+    <Link to="/preferences"><button className='button-google centeronly' style={{marginTop:"3%"}}>Submit</button></Link>
     <br></br>
 	  <Link to="/"><button className='button-google centeronly'>Log Out</button></Link>
     <Footer />

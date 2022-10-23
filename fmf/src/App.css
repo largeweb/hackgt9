@@ -183,22 +183,13 @@ p {
   border-radius: 10%;
   border: 2px solid var(--border-color);
 }
-/*
-.aboutdiv {
-  padding: 20px;
-  width: 90%;
-  margin-left: 5%;
-  background-color: var(--menu-color);
-  border-radius: 10%;
-}
-*/
-/* CSS */
+
 .aboutdiv {
   align-items: center;
   background-color: #FFFFFF;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 3px 3px 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 7px 7px 0;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
@@ -489,4 +480,45 @@ navmain {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.slider {
+position: relative;
+width: 500px;
+height: 40px;
+padding: 30px;
+margin: auto;
+background: #fcfcfc;
+border-radius: 20px;
+display: flex;
+align-items: center;
+box-shadow: 0px 7px 7px #7E6D5766;
+}
+
+.slider p {
+font-size: 26px;
+font-weight: 600;
+padding-left: 30px;
+color: var(--text-color);
+}
+
+.slider input[type="range"] {
+-webkit-appearance:none !important;
+width: 420px;
+height: 2px;
+background: black;
+border: none;
+outline: none;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none !important;
+width: 20px;
+height:20px;
+background: black;
+border: 2px solid black;
+border-radius: 50%;
+cursor: pointer;
+}
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+background: black;
 }
