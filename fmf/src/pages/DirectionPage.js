@@ -146,15 +146,15 @@ function DirectionPage() {
       <span>Start Your Journey</span>
       <hr></hr>
       <div dangerouslySetInnerHTML={{ __html: atag }} />
-      <hr></hr>
+      {/* <hr></hr> */}
     </div>
-    <br></br>
+    {/* <br></br> */}
 	  <Link to="/directions"><button className='button-google centeronly' onClick={refreshPage}>Try Another Option?</button></Link>
-    <br></br>
+    {/* <br></br> */}
 	  <Link to="/rating"><button className='button-google'>Done!</button></Link>
-    <br></br>
+    {/* <br></br> */}
 	  <Link to="/preferences"><button className='button-google'>Back</button></Link>
-    <Footer />
+    <Footer style={{bottom:"0"}}/>
   </div>
  )
 }
