@@ -370,3 +370,10 @@ navmain {
 .mainTitleMenu {
   background-color: #6443ba;
 }
+
+.navmenu-icon-open {
+  background-color: var(--navmenu-btn-color);
+  font-size: 30px;
+  padding: 5px;
+  border: 2px solid var(--border-color);
+}

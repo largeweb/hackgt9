@@ -22,7 +22,7 @@ const Navbar = () => {
       {open
         ? <div>
             <div className='navmenu'>
-              <button className='' onClick={toggleOpen}>
+              <button className='navmenu-icon-open' onClick={toggleOpen}>
                 <KeyboardDoubleArrowLeftIcon />
               </button>
               {navData.map(item =>{
