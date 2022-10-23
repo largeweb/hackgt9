@@ -36,7 +36,7 @@ function DirectionPage() {
         console.log("RUNNING FETCH");
         const response = await fetch('http://findmyfood.xyz:3000/getnearby/2/1500/chinese', {
           method: 'GET'
-          // mode: 'cors',
+          mode: 'cors',
         });
         console.log("FINISHED FETCH, AWAITING RESPONSE");
         const data = await response.json();
