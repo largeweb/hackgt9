@@ -128,7 +128,7 @@ function DirectionPage() {
       Directions to {restaurantChoice}
     </div>
     <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
-    {atag}
+    <div dangerouslySetInnerHTML={{ __html: atag }} />
     <div className='menuContainer aboutdiv'>
       Start Journey
     </div>
