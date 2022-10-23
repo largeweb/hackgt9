@@ -24,7 +24,7 @@ const Navbar = () => {
 }
       {open
         ? <div style={{backgroundColor:"black",width:"40%",right:"0",padding:"10px"}}>
-            <div className="navbar-brand navbarLabel navmenu" style={{backgroundColor:"black",width:"100%"}}>
+            <div className="navmenu" style={{backgroundColor:"black",width:"100%"}}>
               Find My Food
             </div>
             <div className='navmenu'>
