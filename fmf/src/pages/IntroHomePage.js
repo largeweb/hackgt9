@@ -11,6 +11,7 @@ import child1 from "../images/child1.jpeg"
 import useLocalStorage from "use-local-storage"
 // import { signInWithGoogle } from "../firebase";
 import { getAuth, signInWithPopup, signInWithRedirect, getRedirectResult, GoogleAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
+import auth from "../firebase";
 
 
 const provider = new GoogleAuthProvider();
