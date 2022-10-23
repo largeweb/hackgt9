@@ -73,7 +73,6 @@ function DirectionPage() {
     // else {
     //   console.log("Find My Food cannot access your location's coordinates from your browser. Please enable location sharing or try using a different browser.");
     // }
-  }
 
  return (
   <div className='homediv'>
