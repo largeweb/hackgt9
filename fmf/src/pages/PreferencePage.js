@@ -16,15 +16,41 @@ function PreferencePage() {
  return (
   <div className='homediv'>
     <Navbar />
-    <div className='menuContainer aboutdiv'>
-      This is the Preference Page
+    <div className='midTitleText centeronly' style={{color:"#5838b4"}}>
+      Preference
     </div>
-    <img src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' />
-    <img src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' />
-    <img src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
-    <img src='https://sharpaspirant.com/wp-content/uploads/2021/02/Breakfast-Sandwich-22-500x500.jpg' alt='sandwich' />
-	  <Link to="/directions"><button className='menuButton'>Go</button></Link>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+    <h1 className='smallTitleText' style={{marginLeft:"5%"}}>Category</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div className="picture-frame">
+          <img src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' />
+          <span>Texan</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div className="picture-frame">
+          <img src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' />
+          <span>American</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div className="picture-frame">
+          <img src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
+          <span>Chinese</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div className="picture-frame">
+          <img src='https://sharpaspirant.com/wp-content/uploads/2021/02/Breakfast-Sandwich-22-500x500.jpg' alt='sandwich' />
+          <span>European</span>
+        </div>
+      </div>
+    </div> 
+    <h1 className='smallTitleText' style={{marginLeft:"5%"}}>Restrictions</h1>
+
+	  <Link to="/directions"><button className='button-google'>Submit</button></Link>
+    <br></br>
+	  <Link to="/"><button className='button-google'>Go Back Home</button></Link>
     <Footer />
   </div>
  )

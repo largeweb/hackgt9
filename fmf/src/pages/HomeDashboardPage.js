@@ -64,7 +64,7 @@ function HomeDashboardPage() {
       <div className='centeronly smallTitleText'>Distance</div>
       <hr></hr>
       <div class="slider">
-        <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value"/>
+        <input type="range" min="0" max="60" value="40" oninput="rangeValue.innerText = this.value"/>
         <p id="rangeValue">100</p>
       </div>
     </div>
