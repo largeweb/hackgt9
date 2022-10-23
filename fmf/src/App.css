@@ -498,7 +498,7 @@ navmain {
 
 .slider {
   position: relative;
-  width: 40%;
+  width: 200px;
   height: 40px;
   padding: 30px;
   margin: auto;
@@ -518,7 +518,7 @@ navmain {
 
 .slider input[type="range"] {
   -webkit-appearance: none !important;
-  width: 420px;
+  width: 150px;
   height: 2px;
   background: black;
   border: none;
