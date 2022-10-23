@@ -16,7 +16,7 @@ import useLocalStorage from "use-local-storage"
 
 function DirectionPage() {
 
-  const [restaurantChoice, setRestaurantChoice] = useLocalStorage({restaurant:"Joe's Pizza"})
+  const [restaurantChoice, setRestaurantChoice] = useLocalStorage({restaurant:'Joes Pizza'})
 
   function refreshPage() {
     window.location.reload(false);
@@ -35,7 +35,7 @@ function DirectionPage() {
 	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <br></br>
-	  <Link to="/directions"><button className='menuButton' onClick={refreshPage}>Go Back Home</button></Link>
+	  <Link to="/directions"><button className='menuButton centeronly' onClick={refreshPage}>Select New Option</button></Link>
     <Footer />
   </div>
  )
