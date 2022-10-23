@@ -31,11 +31,13 @@ function HomeDashboardPage() {
     {/* <div className='menuContainer aboutdiv'>
       Find my Food
     </div> */}
-    <Link to="/preferences"><button className='randomChooseButton'>Choose Random</button></Link>
-    <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
-      <div className='centeronly' style={{marginBottom:"20px"}}>Price</div>
+    <Link to="/preferences"><button className='randomChooseButton'>Filter</button></Link>
+    <div className='menuContainer aboutdiv' style={{marginBottom:"3%"}}>
+      <div className='centeronly smallTitleText' style={{marginTop:"3%"}}>Price</div>
+      <hr></hr> 
       {pricelevel === "1"
         ? <div>
+            <br></br>
             <div className='priceItem selectedPriceLevel'>💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('2')}>💲💲</div>
             <div className='priceItem' onClick={(e) => setPriceLevel('3')}>💲💲💲</div>
@@ -60,6 +62,7 @@ function HomeDashboardPage() {
       }
     </div>
     <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
+      <div className='centeronly smallTitleText'>Distance</div>
       <div className='centeronly'>Within</div>
       <input
               type="text"
@@ -69,9 +72,9 @@ function HomeDashboardPage() {
               onChange={(e) => setDistance(e.target.value)} />
       <div className='centeronly'>Miles</div>
     </div>
-    <Link to="/preferences"><button className='menuButton centeronly'>Continue</button></Link>
+    <Link to="/preferences"><button className='button-google centeronly'>Continue</button></Link>
     <br></br>
-	  <Link to="/"><button className='menuButton centeronly'>Log Out</button></Link>
+	  <Link to="/"><button className='button-google centeronly'>Log Out</button></Link>
     <Footer />
   </div>
  )

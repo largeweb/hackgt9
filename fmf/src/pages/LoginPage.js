@@ -27,20 +27,16 @@ function LoginPage() {
               placeholder="Username"
               value={username}
               className='loginInput'
-              width="200px"
               onChange={(e) => setUsername(e.target.value)} />
       <input
               type="text"
               placeholder="Password"
               value={password}
               className='loginInput'
-              width="200px"
               onChange={(e) => setPassword(e.target.value)} />
-      <br></br>
       <Link to="/dashboard"><button className='button-google centeronly' style={{marginBottom:"3%"}}>Login</button></Link>
       <brk></brk>
-      <Link to="/"><button className='button-google centeronly'>Back</button></Link>
-
+      <Link to="/"><button className='button-google centeronly' style={{marginBottom: "3%"}}>Back</button></Link>
     <Footer />
   </div>
  )

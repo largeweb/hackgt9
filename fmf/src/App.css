@@ -1,16 +1,15 @@
 :root {
   --app-header-color: #282c34;
-  --border-color: #5838B4;
-  --button-color: #b4d4fd;
-  --menu-color: #d4bdff;
-  --text-color: #000;
+  --button-color: white;
+  --menu-color: #5838B4;
+  --text-color: #5838B4;
   --navmenu-btn-color: black;
   --navmenu-icon-color: purple;
   --navmenu-item-color: white;
   --small-link-btn-color: white;
   --footer-background: rgb(220, 235, 255);
-  --app-link-color: #61dafb;
-  --home-div-bg-color: rgb(199, 216, 255);
+  --app-link-color: #5838B4;
+  --home-div-bg-color: white;
   --nav-menu-btn-color: rgb(10,25,41);
   --big-title-text: white;
   --small-title-text: orange;
@@ -68,15 +67,14 @@
   border-radius: 20%;
   border: 3px solid var(--border-color);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .randomChooseButton {
   width: 30%;
-  background: var(--button-color);
+  background: var(--border-color);
   color: var(--text-color);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 50px;
   padding: 15px;
   margin-left: 35%;
   margin-top: 10px;
@@ -84,7 +82,6 @@
   border-radius: 20%;
   border: 3px solid var(--border-color);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .menuContainer {
@@ -98,7 +95,6 @@
   /* background-color: var(-menu-color); */
   border: 5px solid var(--border-color);
   border-radius: 10%;
-  font-family: 'Courier New', Courier, monospace;
   padding: 10px;
 }
 
@@ -116,25 +112,23 @@
   background: var(--button-color);
   font-size: 15px;
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .navbarLabel {
-  font-size: large;
-  margin: 0% 5%;
+  font-size: 80px;
+  text-align: center;
+  
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .navbarButton {
   font-size: large;
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 
 .navcolor {
-  background: rgb(83, 152, 241);
+  background: var(--border-color);
   margin-bottom: 2%;
 }
 
@@ -190,13 +184,39 @@ p {
   border-radius: 10%;
   border: 2px solid var(--border-color);
 }
-
+/*
 .aboutdiv {
   padding: 20px;
   width: 90%;
   margin-left: 5%;
   background-color: var(--menu-color);
   border-radius: 10%;
+}
+*/
+/* CSS */
+.aboutdiv {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 3px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: block;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  height: 200px;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 80%;
 }
 
 .inputfield {
@@ -346,11 +366,12 @@ navmain {
 }
 
 .loginInput {
-  width: 90%;
-  margin-left: 5%;
-  border-radius: 10%;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  text-align: left;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
   padding: 8px;
   font-size: 15px;
 }
@@ -459,4 +480,14 @@ navmain {
 
 .button-google:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.footer-css {
+  background-color: rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
