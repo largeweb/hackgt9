@@ -1,5 +1,5 @@
 import { Button } from 'bootstrap';
-import React from 'react';
+import React, {useEffect} from 'react';
 import "react-bootstrap"
 import { Container } from 'react-bootstrap';
 import '../App.css';
@@ -18,8 +18,51 @@ function DirectionPage() {
 
   const [restaurantChoice, setRestaurantChoice] = useLocalStorage('restaurantChoice','Joes Pizza')
 
+  useEffect(() => {
+    console.log("locationDict for price level 2, distance of 10000, chinese")
+    getLocation(2,1500,"chinese")
+    console.log("set location dict")
+    console.log(locationDict.name)
+  });
+
+  var locationDict;
+
   function refreshPage() {
     window.location.reload(false);
+  }
+
+  const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
+    const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
+    const response = await fetch(apiString, {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'}
+    });
+    const data = await response.json();
+    return await data.results;
+  }
+
+  const getLocation = async (maxPrice, radius, keyWord) => {
+    if ("geolocation" in navigator) {
+      console.log("inside if")
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        console.log("beggining of function, setting vars")
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        console.log("running fetch locations")
+        const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
+        console.log("setting index to location length floor")
+        const index = Math.floor(Math.random() * await locations.length);
+        console.log("setting loc to await locations at index")
+        const loc = await locations[index];
+        console.log("setting location dict")
+        locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
+        console.log("print location dict")
+        console.log(locationDict);
+      });
+    }
+    else {
+      console.log("Find My Food cannot access your location's coordinates from your browser. Please enable location sharing or try using a different browser.");
+    }
   }
 
  return (
