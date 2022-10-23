@@ -42,16 +42,21 @@ function DirectionPage() {
   }
 
   const getLocation = async (maxPrice, radius, keyWord) => {
-    console.log("before if")
     if ("geolocation" in navigator) {
       console.log("inside if")
       navigator.geolocation.getCurrentPosition(async function(position) {
+        console.log("beggining of function, setting vars")
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
+        console.log("running fetch locations")
         const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
+        console.log("setting index to location length floor")
         const index = Math.floor(Math.random() * await locations.length);
+        console.log("setting loc to await locations at index")
         const loc = await locations[index];
+        console.log("setting location dict")
         locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
+        console.log("print location dict")
         console.log(locationDict);
       });
     }
