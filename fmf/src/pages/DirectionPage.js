@@ -50,7 +50,7 @@ function DirectionPage() {
         console.log("restaurant price level: " + restaurantPriceLevel);
         console.log("restaurant rating: " + restaurantRating);
         const atagret = (data.results[0].photos[0]["html_attributions"][0]);
-        setAtag(atagret);
+        setAtag("<div>" + atagret + "</div>");
         setRestaurantChoice(restaurantName);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
