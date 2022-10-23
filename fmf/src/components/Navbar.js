@@ -24,9 +24,9 @@ const Navbar = () => {
 }
       {open
         ? <div style={{backgroundColor:"black",width:"40%",right:"0",padding:"10px"}}>
-            <a className="navbar-brand navbarLabel" style={{backgroundColor:"black",width:"100%"}} href="/">
+            <div className="navbar-brand navbarLabel navmenu" style={{backgroundColor:"black",width:"100%"}}>
               Find My Food
-            </a>
+            </div>
             <div className='navmenu'>
               <button className='' style={{backgroundColor:"black",width:"80%",marginLeft:"10%"}} onClick={toggleOpen}>
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
