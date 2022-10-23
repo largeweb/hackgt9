@@ -1,8 +1,8 @@
 // Import the functions you need from the SDKs you need
 // import dotenv from 'dotenv'
 // dotenv.config()
-// import * as firebase from "firebase/app";
-import { initializeApp } from "firebase/app";
+import * as firebase from "firebase/app";
+// import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -19,8 +19,8 @@ const firebaseConfig = {
   measurementId: "G-KSBB0YHWTQ"
 };
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 export const auth = firebase.auth();
 const googleProvider = new firebase.auth.GoogleAuthProvider()
