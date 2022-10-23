@@ -54,7 +54,7 @@ function IntroHomePage() {
     <div className='centeronly' style={{marginBottom:"2%", color:"orange"}}>Search Now!</div>
     <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}} onClick={{}}>Continue with Facebook</button></Link>
     <br></br>
-    <Link to="/login"><button className='button-google' onClick={signInWithRedirect(auth, provider)}>Continue with Google</button></Link>
+    <button className='button-google' onClick={signInWithRedirect(auth, provider)}>Continue with Google</button>
     <br></br>
     <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"200px"}}></div>
