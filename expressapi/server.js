@@ -8,7 +8,7 @@ app.get('/getnearby/:pricelevel/:radius/:keyword', (req, res) => {
   pricelevel = req.params.pricelevel;
   radius = req.params.radius;
   keyword = req.params.keyword;
-  res.send('price level is: ' + pricelevel + ' radius is: ' + radius + ' keyword is: ' + keyword)
+  res.json({pricelevel: pricelevel, radius: radius, keyword: keyword});
 })
 
 app.listen(port, () => {
