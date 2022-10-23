@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 import useLocalStorage from "use-local-storage"
+import { signInWithGoogle } from "./services/firebase";
 
 // this page has continue with facebook/google OR continue as guest
 // continue as guest will link straight to dashboard page
@@ -24,9 +25,9 @@ function IntroHomePage() {
     </div>
     {/* This is the Intro Home Page */}
     <div className='centeronly' style={{marginBottom:"2%", color:"orange"}}>Search Now!</div>
-    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}}>Continue with Facebook</button></Link>
+    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}} onClick={signInWithFacebook}>Continue with Facebook</button></Link>
     <br></br>
-    <Link to="/login"><button className='button-google'>Continue with Google</button></Link>
+    <Link to="/login"><button className='button-google' onClick={signInWithGoogle}>Continue with Google</button></Link>
     <br></br>
     <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"200px"}}></div>
