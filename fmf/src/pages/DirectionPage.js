@@ -149,11 +149,11 @@ function DirectionPage() {
       {/* <hr></hr> */}
     </div>
     {/* <br></br> */}
-	  <Link to="/directions"><button className='button-google centeronly' onClick={refreshPage} style={{marginBottom:"5px"}}>Try Another Option?</button></Link>
+	  <Link to="/directions"><button className='button-google centeronly' onClick={refreshPage} style={{marginBottom:"10px", marginTop:"10px"}}>Try Another Option?</button></Link>
     {/* <br></br> */}
-	  <Link to="/rating"><button className='button-google' style={{marginBottom:"5px"}}>Done!</button></Link>
+	  <Link to="/rating"><button className='button-google' style={{marginBottom:"10px"}}>Done!</button></Link>
     {/* <br></br> */}
-	  <Link to="/preferences"><button className='button-google' style={{marginBottom:"5px"}}>Back</button></Link>
+	  <Link to="/preferences"><button className='button-google' style={{marginBottom:"10px"}}>Back</button></Link>
     <Footer style={{bottom:"0"}}/>
   </div>
  )
