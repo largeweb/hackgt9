@@ -139,17 +139,19 @@ function DirectionPage() {
     <div className="centeronly">
       <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
     </div>
-    <h1 className="midTitleSize">
+    <h1 className="centeronly midTitleSize" style={{color:"white"}}>
       {restaurantChoice}
     </h1>
-    <div className='menuContainer aboutdiv'>
+    <div className='aboutdiv centeronly'>
       <span>Start Your Journey</span>
-      <br></br>
+      <hr></hr>
       <div dangerouslySetInnerHTML={{ __html: atag }} />
+      <hr></hr>
     </div>
+    <br></br>
 	  <Link to="/directions"><button className='button-google centeronly' onClick={refreshPage}>Try Another Option?</button></Link>
     <br></br>
-	  <Link to="/rating"><button className='button-google'>Finished</button></Link>
+	  <Link to="/rating"><button className='button-google'>Done!</button></Link>
     <br></br>
 	  <Link to="/preferences"><button className='button-google'>Back</button></Link>
     <Footer />
