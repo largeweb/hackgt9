@@ -32,10 +32,10 @@ function DirectionPage() {
     <div className='menuContainer aboutdiv'>
       Start Journey
     </div>
-	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/directions"><button className='menuButton centeronly' onClick={refreshPage}>Try Another Option?</button></Link>
     <br></br>
-	  <Link to="/directions"><button className='menuButton centeronly' onClick={refreshPage}>Select New Option</button></Link>
+	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
+	  <Link to="/preferences"><button className='menuButton'>Back</button></Link>
     <Footer />
   </div>
  )

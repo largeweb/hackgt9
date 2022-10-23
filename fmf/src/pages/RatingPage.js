@@ -15,13 +15,16 @@ import child1 from "../images/child1.jpeg"
 
 function RatingPage() {
  return (
-  <div className='homediv'>
+  <div>
     <Navbar />
-    <div className='menuContainer aboutdiv'>
-      This is the Rating Page
+    <div>
+      Add a Review
+    </div>
+    <div>
+      Rate your Experience
     </div>
     <div className='menuContainer aboutdiv'>
-      ***** Rating
+      🌟🌟🌟🌟🌟
     </div>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
