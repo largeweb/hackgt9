@@ -19,9 +19,9 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
       {!open &&
             <a className="navbar-brand navbarLabel" href="/">
-              Find My Food
+              FINDmyFOOD 
             </a>
-}
+      }
       {open
         ? <div style={{backgroundColor:"black",width:"40%",top:"0",bottom:"0",padding:"10px"}}>
             <div className="navbar-brand navbarLabel" style={{backgroundColor:"black",width:"100%"}}>

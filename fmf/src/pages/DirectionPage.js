@@ -19,6 +19,8 @@ function DirectionPage() {
   const [restaurantChoice, setRestaurantChoice] = useLocalStorage('restaurantChoice','Joes Pizza')
   const [atag, setAtag] = useLocalStorage('atag','')
 
+  const index = Math.floor(Math.random()*15)
+
   useEffect(() => {
     console.log("locationDict for price level 2, distance of 10000, chinese")
     getLocation(3,2000,"indian")
@@ -52,14 +54,15 @@ function DirectionPage() {
         const data = await response.json();
         console.log("FINISHED AWAITING");
         console.log(data);
-        const restaurantName = data.results[0].name;
-        const restaurantPriceLevel = data.results[0].price_level;
-        const restaurantRating = data.results[0].rating;
+        console.log(index)
+        const restaurantName = data.results[index].name;
+        const restaurantPriceLevel = data.results[index].price_level;
+        const restaurantRating = data.results[index].rating;
         console.log("restaurant name: " + restaurantName);
         console.log("restaurant price level: " + restaurantPriceLevel);
         console.log("restaurant rating: " + restaurantRating);
-        const atagret = (data.results[0].photos[0]["html_attributions"][0]);
-        setAtag("<div>" + atagret + "</div>");
+        const atagret = (data.results[index].photos[0]["html_attributions"][0]);
+        setAtag("<div className=\"midTitleText centeronly\">" + atagret + "</div>");
         setRestaurantChoice(restaurantName);
         // locationDict = data.results[0];
         // setRestaurantChoice(locationDict.name)
@@ -131,20 +134,26 @@ function DirectionPage() {
     // }
 
  return (
-  <div className='homediv'>
-    <Navbar />
-    <div className='menuContainer aboutdiv'>
-      Directions to {restaurantChoice}
+  <div className='homediv mainTitleMenu'>
+    <navbar />
+    <div className="centeronly">
+      <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
     </div>
-    <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
-    <div dangerouslySetInnerHTML={{ __html: atag }} />
-    <div className='menuContainer aboutdiv'>
-      Start Journey
+    <h1 className="centeronly midTitleSize" style={{color:"white"}}>
+      {restaurantChoice}
+    </h1>
+    <div className='aboutdiv centeronly'>
+      <span>Start Your Journey</span>
+      <hr></hr>
+      <div dangerouslySetInnerHTML={{ __html: atag }} />
+      <hr></hr>
     </div>
-	  <Link to="/directions"><button className='menuButton centeronly' onClick={refreshPage}>Try Another Option?</button></Link>
     <br></br>
-	  <Link to="/rating"><button className='menuButton'>Finished</button></Link>
-	  <Link to="/preferences"><button className='menuButton'>Back</button></Link>
+	  <Link to="/directions"><button className='button-google centeronly' onClick={refreshPage}>Try Another Option?</button></Link>
+    <br></br>
+	  <Link to="/rating"><button className='button-google'>Done!</button></Link>
+    <br></br>
+	  <Link to="/preferences"><button className='button-google'>Back</button></Link>
     <Footer />
   </div>
  )

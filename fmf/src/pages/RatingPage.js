@@ -15,18 +15,30 @@ import child1 from "../images/child1.jpeg"
 
 function RatingPage() {
  return (
-  <div>
+  <div className="mainTitleMenu">
     <Navbar />
-    <div>
+    <div className="midTitleText centeronly">
       Add a Review
     </div>
-    <div>
+    <hr></hr>
+    <div className="smallTitleText centeronly">
       Rate your Experience
     </div>
-    <div className='menuContainer aboutdiv' style={{fontWeight:"40px"}}>
-      🌟🌟🌟🌟🌟
+    <div className='picture-frame' style={{fontWeight:"60px", fontSize:"40px", width:"55%",marginBottom:"3%", marginTop:"4%"}}>
+      🌟  🌟  🌟  🌟  🌟
     </div>
-	  <Link to="/dashboard"><button className='menuButton centeronly'>Dashboard</button></Link>
+    <hr></hr>
+    <div className="smallTitleText centeronly">
+      What did you like? 
+    </div>
+    <br></br>
+    <input
+              type="text"
+              placeholder=""
+              className='loginInput'
+    />
+    <hr></hr>
+	  <Link to="/dashboard"><button className='button-google centeronly'>Dashboard</button></Link>
     <Footer />
   </div>
  )

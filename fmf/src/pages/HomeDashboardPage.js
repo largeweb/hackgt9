@@ -32,7 +32,7 @@ function HomeDashboardPage() {
       Find my Food
     </div> */}
     <Link to="/preferences"><button className='randomChooseButton'>Filter</button></Link>
-    <div className='menuContainer aboutdiv' style={{marginBottom:"3%"}}>
+    <div className='aboutdiv centeronly' style={{marginBottom:"3%"}}>
       <div className='centeronly smallTitleText'>Price</div>
       <hr></hr> 
       {pricelevel === "1"
@@ -60,12 +60,11 @@ function HomeDashboardPage() {
         : <div />
       }
     </div>
-    <div className='menuContainer aboutdiv' style={{marginBottom:"10px"}}>
+    <div className='aboutdiv centeronly' style={{marginBottom:"10px"}}>
       <div className='centeronly smallTitleText'>Distance</div>
       <hr></hr>
       <div class="slider">
         <input type="range" min="0" max="60" value="40" oninput="rangeValue.innerText = this.value"/>
-        <p id="rangeValue">100</p>
       </div>
     </div>
     <Link to="/preferences"><button className='button-google centeronly' style={{marginTop:"3%"}}>Submit</button></Link>
