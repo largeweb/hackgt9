@@ -73,7 +73,7 @@ function PreferencePage() {
         </div>
       </div>
     </div> 
-
+    <br></br>
 	  <Link to="/directions"><button className='button-google'>Submit</button></Link>
     <br></br>
 	  <Link to="/"><button className='button-google'>Go Back Home</button></Link>
