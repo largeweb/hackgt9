@@ -46,13 +46,9 @@ function PreferencePage() {
           <span>European</span>
         </div>
       </div>
-<<<<<<< HEAD
     </div>
-=======
-    </div> 
     <br></br>
     <hr></hr>
->>>>>>> 9175fc3d7e4ee2397655aff92fcfcf1708938b2e
     <h1 className='smallTitleText' style={{marginLeft:"5%"}}>Restrictions</h1>
     <div class="grid-container">
       <div class="grid-item">
@@ -79,7 +75,7 @@ function PreferencePage() {
           <span>Kosher</span>
         </div>
       </div>
-    </div> 
+    </div>
     <hr></hr>
     <br></br>
 	  <Link to="/directions"><button className='button-google'>Submit</button></Link>
