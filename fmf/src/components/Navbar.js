@@ -16,8 +16,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
-      <a className="navbar-brand navbarLabel" href="/">
-        Find My Food
+      <a className="navbar-brand navbarLabel" href="/"> 
+        FINDmyFOOD
       </a>
       {open
         ? <div>
