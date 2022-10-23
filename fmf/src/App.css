@@ -385,7 +385,7 @@ navmain {
 }
 
 .midTitleText {
-  font-size: 60px;
+  font-size: 50px;
   color: var(--big-title-text);
   font-weight: 700;
 }
