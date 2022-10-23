@@ -36,7 +36,7 @@ function LoginPage() {
               onChange={(e) => setPassword(e.target.value)} />
       <Link to="/dashboard"><button className='button-google centeronly' style={{marginBottom:"3%"}}>Login</button></Link>
       <brk></brk>
-      <Link to="/" ><button className='button-google centeronly' style={{marginBottom: "100px"}}>Back</button></Link>
+      <Link to="/" ><button className='button-google centeronly' style={{marginBottom: "120px"}}>Back</button></Link>
     <Footer />
   </div>
  )
