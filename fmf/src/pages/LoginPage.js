@@ -18,10 +18,9 @@ function LoginPage() {
   const [password, setPassword] = useLocalStorage('localpassword', 'password');
 
  return (
-  <div className='homediv'>
+  <div className='mainTitleMenu'>
     <Navbar />
-    <div className='menuContainer aboutdiv'>
-      <div>Please Login</div>
+      <div className='bigTitleText'>Please Login</div>
 
       <input
               type="text"
@@ -36,7 +35,6 @@ function LoginPage() {
               className='loginInput'
               onChange={(e) => setPassword(e.target.value)} />
       <Link to="/dashboard"><button className='menuButton centeronly'>Login</button></Link>
-      </div>
 
       <Link to="/"><button className='menuButton centeronly'>Back</button></Link>
 
