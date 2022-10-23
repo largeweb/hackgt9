@@ -23,7 +23,7 @@ function DirectionPage() {
 
   useEffect(() => {
     console.log("locationDict for price level 2, distance of 10000, chinese")
-    getLocation(3,2000,"indian")
+    getLocation(2,2000,"American")
     console.log("set location dict")
     // setTimeout(console.log(locationDict.name), 2000);
   });
