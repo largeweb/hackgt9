@@ -558,15 +558,15 @@ navmain {
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   font-weight: 600;
-  justify-content: center;
-  position: relative;
+  /* justify-content: center; */
+  /* position: relative; */
   text-decoration: none;
   text-align: center;
-  user-select: none;
+  /* user-select: none; */
   -webkit-user-select: none;
   touch-action: manipulation;
   display:inline;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
   width: 30%;
   box-shadow: gray 0px 7px 14px;
   margin-left: 20%;
