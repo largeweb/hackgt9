@@ -4,7 +4,7 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 export default function Footer() {
   return (
-      <div className='text-center p-4 footer-cs' style={{position:"absolute",bottom:"0"}}>
+      <div className='text-center p-4 footer-cs'>
         © 2022 Copyright:<br></br>
         <a className='text-reset fw-bold' href='/'>
           FMF Team HackGT

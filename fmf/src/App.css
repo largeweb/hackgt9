@@ -488,7 +488,7 @@ navmain {
 
 .footer-css {
   background-color: rgba(0, 0, 0, 0.05);
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
