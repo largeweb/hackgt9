@@ -87,6 +87,8 @@ function DirectionPage() {
         console.log("error");
         console.log(err);
       }
+    }
+  }
 
   const getLocation = async (maxPrice, radius, keyWord) => {
       try {
