@@ -5,6 +5,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import '../App.css';
 import { NavLink } from "react-router-dom";
+import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css';
 
 const Navbar = () => {
 
@@ -23,7 +24,8 @@ const Navbar = () => {
         ? <div>
             <div className='navmenu'>
               <button className='navmenu-icon' style={{padding:"10px",background:"none"}} onClick={toggleOpen}>
-                <KeyboardDoubleArrowLeftIcon />
+                {/* <KeyboardDoubleArrowLeftIcon /> */}
+                <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
               {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
@@ -37,7 +39,8 @@ const Navbar = () => {
           <div>
             <div className='navmenuClosed'>
               <button className='navmenu-icon' onClick={toggleOpen}>
-                <KeyboardDoubleArrowRightIcon />
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                {/* <KeyboardDoubleArrowLeftIcon /> */}
               </button>
               {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
