@@ -48,7 +48,6 @@ function DirectionPage() {
       console.log(radius)
       console.log(keyWord)
       try {
-        navigator.geolocation.getCurrentPosition(async function() {
           console.log("beggining of function, setting vars")
           const latitude = 33.785061
           const longitude = -84.379936
@@ -62,7 +61,8 @@ function DirectionPage() {
           locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
           console.log("print location dict")
           console.log(locationDict);
-        });
+        // navigator.geolocation.getCurrentPosition(async function() {
+        // });
       } catch (err) {
         console.log("error");
         console.log(err);
