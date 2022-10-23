@@ -31,10 +31,10 @@ function HomeDashboardPage() {
     {/* <div className='menuContainer aboutdiv'>
       Find my Food
     </div> */}
-    <Link to="/preferences"><button className='randomChooseButton'>Filter</button></Link>
+    <Link to="/preferences"><button className='randomChooseButton'>Dashboard</button></Link>
     <div className='aboutdiv centeronly' style={{marginBottom:"3%"}}>
       <div className='centeronly smallTitleText'>Price</div>
-      <hr></hr> 
+      <hr></hr>
       {pricelevel === "1"
         ? <div id="grid">
             <div className='priceItem selectedPriceLevel'>💲</div>

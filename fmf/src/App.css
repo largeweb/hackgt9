@@ -572,3 +572,8 @@ navmain {
 .grid-item {
   display: inline;
 }
+
+.superTinyText {
+  font-size: 10px;
+  color: gray;
+}
