@@ -24,7 +24,7 @@ const Navbar = () => {
 }
       {open
         ? <div>
-            <a className="navbar-brand navbarLabel" style={{backgroundColor:"black"}} href="/">
+            <a className="" style={{backgroundColor:"black"}} href="/">
               Find My Food
             </a>
             <div className='navmenu'>
