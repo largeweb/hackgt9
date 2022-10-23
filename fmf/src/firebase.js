@@ -2,7 +2,7 @@
 // import dotenv from 'dotenv'
 // dotenv.config()
 import * as firebase from "firebase/app";
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
