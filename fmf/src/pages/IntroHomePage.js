@@ -30,7 +30,7 @@ function IntroHomePage() {
     <br></br>
     <Link to="/dashboard"><button className='smallLinkButton astext'><u>Continue as Guest</u></button></Link>
     <div style={{marginBottom:"110px"}}></div>
-    <h2 style={{marginBottom:"70px"}} className='superTinyText centeronly' >Make sure this App is added to your Home Screen for the Best User Experience</h2>
+    <h2  className='superTinyText centeronly' >Make sure this App is added to your Home Screen for the Best User Experience</h2>
 
     {/* <hr></hr>
     <hr></hr>
@@ -44,7 +44,7 @@ function IntroHomePage() {
 	  <Link to="/preferences"><button className='menuButton'>Preference Page /preferences</button></Link>
 	  <Link to="/directions"><button className='menuButton'>Direction Page /directions</button></Link>
 	  <Link to="/review"><button className='menuButton'>Review Page /review</button></Link> */}
-    <Footer />
+    <Footer style={{bottom:"0"}} />
   </div>
  )
 }
