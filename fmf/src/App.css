@@ -369,12 +369,13 @@ navmain {
 }
 
 .priceItem {
-  border: 3px solid var(--border-color);
-  padding: 10px;
+  /* border: 3px solid var(--border-color); */
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 20%;
   margin-left: 10%;
   display: inline;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .bigTitleText {
