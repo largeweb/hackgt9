@@ -23,7 +23,7 @@ const Navbar = () => {
             </a>
       }
       {open
-        ? <div style={{backgroundColor:"black",width:"40%",top:"0",bottom:"0",padding:"10px"}}>
+        ? <div style={{backgroundColor:"black",width:"40%",top:"0",bottom:"0",padding:"10px", marginRight:"10%"}}>
             <div className="navbar-brand navbarLabel" style={{backgroundColor:"black",width:"100%"}}>
               Find My Food
             </div>
