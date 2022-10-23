@@ -40,7 +40,7 @@ const Navbar = () => {
         : <div>
           <div>
             <div className='navmenuClosed'>
-              <button className='' style={{backgroundColor:"#5838b4"}} onClick={toggleOpen}>
+              <button className='' style={{backgroundColor:"black"}} onClick={toggleOpen}>
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange",padding:"10px"}} /> */}
