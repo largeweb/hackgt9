@@ -48,10 +48,10 @@ function DirectionPage() {
       console.log(radius)
       console.log(keyWord)
       try {
-        navigator.geolocation.getCurrentPosition(async function(position) {
+        navigator.geolocation.getCurrentPosition(async function() {
           console.log("beggining of function, setting vars")
-          const latitude = position.coords.latitude;
-          const longitude = position.coords.longitude;
+          const latitude = 33.785061
+          const longitude = -84.379936
           console.log("running fetch locations")
           const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
           console.log("setting index to location length floor")
