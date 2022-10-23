@@ -376,4 +376,5 @@ navmain {
   font-size: 30px;
   padding: 5px;
   border: 2px solid var(--border-color);
+  width: 40px;
 }
