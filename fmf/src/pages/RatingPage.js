@@ -15,7 +15,7 @@ import child1 from "../images/child1.jpeg"
 
 function RatingPage() {
  return (
-  <div className="mainTitleMenu">
+  <div className="mainTitleMenu" style={{right:"0",left:"0"}}>
     <Navbar />
     <div className="midTitleText centeronly">
       Add a Review
@@ -37,6 +37,7 @@ function RatingPage() {
               placeholder=""
               className='loginInput'
     />
+	  <Link to="/dashboard"><button className='button-google centeronly'>Submit</button></Link>
     <hr></hr>
 	  <Link to="/dashboard"><button className='button-google centeronly'>Dashboard</button></Link>
     <Footer />
