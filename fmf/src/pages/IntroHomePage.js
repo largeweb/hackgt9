@@ -25,7 +25,7 @@ function IntroHomePage() {
     </div>
     {/* This is the Intro Home Page */}
     <div className='centeronly' style={{marginBottom:"2%", color:"orange"}}>Search Now!</div>
-    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}} onClick={signInWithFacebook}>Continue with Facebook</button></Link>
+    <Link to="/login"><button className='button-google' style={{backgroundcolor:"#4267B2"}} onClick={{}}>Continue with Facebook</button></Link>
     <br></br>
     <Link to="/login"><button className='button-google' onClick={signInWithGoogle}>Continue with Google</button></Link>
     <br></br>
