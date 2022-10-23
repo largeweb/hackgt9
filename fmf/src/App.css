@@ -400,6 +400,7 @@ navmain {
   background-color: #5838b4;
   padding-top: 30px;
   padding-bottom: -60px;
+  margin-bottom: -60px;
 }
 
 .navmenu-icon {
