@@ -542,7 +542,7 @@ navmain {
 }
 
 .grid-container {
-  margin: auto;
+  /* margin: auto; */
   display: inline;
   grid-template-columns: 1fr repeat(2, 60px);
   grid-template-rows: auto;
@@ -565,6 +565,7 @@ navmain {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  display:inline;
   vertical-align: baseline;
   width: 30%;
   box-shadow: gray 0px 7px 14px;
