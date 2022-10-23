@@ -24,7 +24,7 @@ function RatingPage() {
     <div className="smallTitleText centeronly">
       Rate your Experience
     </div>
-    <div className='picture-frame' style={{fontWeight:"60px", fontSize:"40px", width:"80%",marginBottom:"3%", marginTop:"4%"}}>
+    <div className='picture-frame' style={{fontWeight:"60px", fontSize:"40px", width:"90%",marginBottom:"3%", marginTop:"4%"}}>
       🌟  🌟  🌟  🌟  🌟
     </div>
     <hr></hr>
