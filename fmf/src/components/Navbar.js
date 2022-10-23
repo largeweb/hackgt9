@@ -17,6 +17,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
+      {!open &&
+            <a className="navbar-brand navbarLabel" href="/">
+              Find My Food
+            </a>
+}
       {open
         ? <div>
             <a className="navbar-brand navbarLabel" href="/">
@@ -39,9 +44,6 @@ const Navbar = () => {
           </div>
         : <div>
           <div>
-            <a className="navbar-brand navbarLabel" href="/">
-              Find My Food
-            </a>
             <div className='navmenuClosed'>
               <button className='' style={{backgroundColor:"#5838b4"}} onClick={toggleOpen}>
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
