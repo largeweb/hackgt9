@@ -139,10 +139,10 @@ function DirectionPage() {
     <div className="centeronly">
       <img src='https://owi.ucdavis.edu/sites/g/files/dgvnsk8926/files/styles/sf_landscape_16x9/public/media/images/google-maps-satellite.png?h=83823e20&itok=G9S9rzyI' alt='google map' />
     </div>
-    <h1 className="centeronly midTitleSize" style={{color:"white"}}>
+    <h1 className="centeronly midTitleSize" style={{color:"white", height:""}}>
       {restaurantChoice}
     </h1>
-    <div className='aboutdiv centeronly'>
+    <div className='aboutdiv centeronly' style={{height:"120px"}}>
       <span>Start Your Journey</span>
       <hr></hr>
       <div dangerouslySetInnerHTML={{ __html: atag }} />

@@ -32,7 +32,7 @@ function HomeDashboardPage() {
       Find my Food
     </div> */}
     <Link to="/preferences"><button className='randomChooseButton'>Dashboard</button></Link>
-    <div className='aboutdiv centeronly' style={{marginBottom:"3%"}}>
+    <div className='aboutdiv centeronly' style={{marginBottom:"3%",height:"200px"}}>
       <div className='centeronly smallTitleText'>Price</div>
       <hr></hr>
       {pricelevel === "1"

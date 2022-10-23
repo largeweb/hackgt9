@@ -201,7 +201,6 @@ p {
   display: block;
   font-weight: 600;
   justify-content: center;
-  height: 120px;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
