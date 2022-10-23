@@ -36,8 +36,8 @@ function PreferencePage() {
       </div>
       <div class="grid-item">
         <div className="picture-frame">
-          <img style={{width:"30%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
-          <span style={{width:"30%"}}>Chinese</span>
+          <img style={{width:"20%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
+          <span style={{width:"10%"}}>Chinese</span>
         </div>
       </div>
       <div class="grid-item">
