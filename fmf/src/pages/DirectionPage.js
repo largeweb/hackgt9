@@ -33,19 +33,14 @@ function DirectionPage() {
 
   const getLocation = async (maxPrice, radius, keyWord) => {
       try {
-          console.log("beggining of function, setting vars")
-          const latitude = 33.785061
-          const longitude = -84.379936
-          console.log("running fetch locations")
-          const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
-          console.log("setting index to location length floor")
-          const index = Math.floor(Math.random() * await locations.length);
-          console.log("setting loc to await locations at index")
-          const loc = await locations[index];
-          console.log("setting location dict")
-          locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
-          console.log("print location dict")
-          console.log(locationDict);
+        const response = await fetch('http://localhost:3000/getnearby/2/1500/chinese');
+        const data = await response.json();
+        console.log(data);
+        // locationDict = data.results[0];
+        // setRestaurantChoice(locationDict.name)
+        // console.log(locationDict.name)
+        // console.log(restaurantChoice)
+        // return data;
       } catch (err) {
         console.log("error");
         console.log(err);
@@ -53,16 +48,16 @@ function DirectionPage() {
       console.log("outside try catch")
     }
 
-  const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
-    const expressApi = 'localhost:3000/getnearby/2/1500/chinese';
-      console.log("about to run response fetch with apistring2")
-    const response = await fetch(expressApi).then((response) => response.json()).then((data) => console.log(data));
-      console.log("about to set data")
-    const data = await response.json();
-      console.log("about to return await results")
-    return data;
-    // return data.results;
-  }
+  // const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
+  //   const expressApi = 'localhost:3000/getnearby/2/1500/chinese';
+  //     console.log("about to run response fetch with expressapi as " + expressApi)
+  //   const response = await fetch(expressApi).then((response) => response.json()).then((data) => console.log(data));
+  //     console.log("about to set data")
+  //   const data = await response.json();
+  //     console.log("about to return await results")
+  //   return data;
+  //   // return data.results;
+  // }
 
   // const fetchLocationsOld = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
   //   const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
