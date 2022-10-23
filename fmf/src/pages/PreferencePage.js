@@ -51,30 +51,30 @@ function PreferencePage() {
     <hr></hr>
     <h1 className='smallTitleText' style={{marginLeft:"5%"}}>Restrictions</h1>
     <div class="grid-container">
-      {/* <div class="grid-item"> */}
-        <div className="picture-frame">
+      <div class="grid-item">
+        {/* <div className="picture-frame"> */}
           <img style={{width:"30%"}} src='https://tipbuzz.com/wp-content/uploads/Grilled-Steak-11-500x500.jpg' alt='steak' />
           {/* <span style={{width:"30%"}}>Paleo</span> */}
-        </div>
-      {/* </div> */}
-      {/* <div class="grid-item"> */}
-        <div className="picture-frame">
+        {/* </div> */}
+      </div>
+      <div class="grid-item">
+        {/* <div className="picture-frame"> */}
           <img style={{width:"30%"}} src='https://www.karissasvegankitchen.com/wp-content/uploads/2020/06/vegan-carrot-dogs-ft-500x500.jpg' alt='vegan' />
           {/* <span style={{width:"30%"}}>HotDog</span> */}
-        </div>
-      {/* </div> */}
-      {/* <div class="grid-item"> */}
-        <div className="picture-frame">
+        {/* </div> */}
+      </div>
+      <div class="grid-item">
+        {/* <div className="picture-frame"> */}
           <img style={{width:"30%"}} src='https://www.funfoodfrolic.com/wp-content/uploads/2020/03/Tofu-Stir-Fry-Thumbnail-500x500.jpg' alt='stirfry' />
           {/* <span style={{width:"30%"}}>Vegetarian</span> */}
-        </div>
-      {/* </div> */}
-      {/* <div class="grid-item"> */}
-        <div className="picture-frame">
+        {/* </div> */}
+      </div>
+      <div class="grid-item">
+        {/* <div className="picture-frame"> */}
           <img style={{width:"30%"}} src='https://sharpaspirant.com/wp-content/uploads/2021/02/Breakfast-Sandwich-22-500x500.jpg' alt='sandwich' />
           {/* <span style={{width:"30%"}}>Kosher</span> */}
-        </div>
-      {/* </div> */}
+        {/* </div> */}
+      </div>
     </div>
     <hr></hr>
     <br></br>
