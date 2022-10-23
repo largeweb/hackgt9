@@ -44,7 +44,7 @@ function IntroHomePage() {
 	  <Link to="/preferences"><button className='menuButton'>Preference Page /preferences</button></Link>
 	  <Link to="/directions"><button className='menuButton'>Direction Page /directions</button></Link>
 	  <Link to="/review"><button className='menuButton'>Review Page /review</button></Link> */}
-    <Footer style={{bottom:"0"}} />
+    <Footer style={{bottom:"-20px"}} />
     <div></div>
   </div>
  )
