@@ -18,6 +18,8 @@ function DirectionPage() {
 
   const [restaurantChoice, setRestaurantChoice] = useLocalStorage('restaurantChoice','Joes Pizza')
 
+  var locationDict;
+
   function refreshPage() {
     window.location.reload(false);
   }
@@ -35,7 +37,7 @@ function DirectionPage() {
   const getLocation = async (maxPrice, radius, keyWord) => {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(async function(position) {
-        setLocationAccessible(true);
+        // setLocationAccessible(true);
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
