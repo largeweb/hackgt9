@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark navcolor" style={{position:"absolute",left:"0",right:"0"}}>
+    <nav className="navbar navbar-expand-lg navbar-dark navcolor">
       {!open &&
             <a className="navbar-brand navbarLabel" href="/">
               FINDmyFOOD
