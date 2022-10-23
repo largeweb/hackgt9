@@ -34,6 +34,22 @@ function DirectionPage() {
   const fetchLocations = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
     const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
     const apiString2 = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag';
+    const expressApi = 'localhost:3000/getnearby/2/1500/chinese';
+      console.log("about to run response fetch with apistring2")
+    const response = await fetch(expressApi, {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'}
+    });
+      console.log("about to set data")
+    const data = await response.json();
+      console.log("about to return await results")
+    return data;
+    // return data.results;
+  }
+
+  const fetchLocationsOld = async (latitude, longitude, openNow, type, accessKey, minPrice, maxPrice, radius, keyWord) => {
+    const apiString = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+latitude+'%2C'+longitude+'&opennow='+openNow+'&type='+type+'&key='+accessKey+'&minprice='+minPrice+'&maxprice='+maxPrice+'&radius='+radius+'&keyword='+keyWord;
+    const apiString2 = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag';
       console.log("about to run response fetch with apistring2")
     const response = await fetch(apiString2, {
       method: 'GET'
@@ -45,7 +61,7 @@ function DirectionPage() {
     return data.results;
   }
 
-  const getLocation = async (maxPrice, radius, keyWord) => {
+  const getLocationOld = async (maxPrice, radius, keyWord) => {
     if ("geolocation" in navigator) {
       console.log("inside if")
       console.log(maxPrice)
@@ -72,6 +88,24 @@ function DirectionPage() {
         console.log(err);
       }
 
+  const getLocation = async (maxPrice, radius, keyWord) => {
+      try {
+          console.log("beggining of function, setting vars")
+          const latitude = 33.785061
+          const longitude = -84.379936
+          console.log("running fetch locations")
+          const locations = await fetchLocations(latitude, longitude, true, 'restaurant', 'AIzaSyAV5PUv0wTnh1gla6gpr_9KmqR2ug_B2Ag', 0, maxPrice, radius, keyWord);
+          console.log("setting index to location length floor")
+          const index = Math.floor(Math.random() * await locations.length);
+          console.log("setting loc to await locations at index")
+          const loc = await locations[index];
+          console.log("setting location dict")
+          locationDict = {'name': loc.name, 'address': loc.vicinity, 'rating': loc.rating, 'total ratings': loc.user_ratings_total, 'price level': loc.price_level, 'latitude': loc.geometry.location.lat, 'longitude': loc.geometry.location.lng, 'photos': loc.photos}
+          console.log("print location dict")
+          console.log(locationDict);
+      } catch (err) {
+        console.log("error");
+        console.log(err);
       }
       console.log("outside try catch")
     }
