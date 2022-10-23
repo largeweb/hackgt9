@@ -23,11 +23,11 @@ const Navbar = () => {
       {open
         ? <div>
             <div className='navmenu'>
-              <button className='' style={{backgroundColor:"#5838b4"}} onClick={toggleOpen}>
+              <button className='' style={{backgroundColor:"black"}} onClick={toggleOpen}>
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange", padding:"10px"}} /> */}
-                <img src={hamburgerIcon} style={{width:"32px", height:"32px"}} />
+                <img src={hamburgerIcon} style={{width:"26px", height:"26px"}} />
               </button>
               {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
@@ -40,11 +40,11 @@ const Navbar = () => {
         : <div>
           <div>
             <div className='navmenuClosed'>
-              <button className='' style={{backgroundColor:"black"}} onClick={toggleOpen}>
+              <button className='' style={{backgroundColor:"#5838b4"}} onClick={toggleOpen}>
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange",padding:"10px"}} /> */}
-                <img src={hamburgerIcon} style={{width:"32px", height:"32px"}} />
+                <img src={hamburgerIcon} style={{width:"26px", height:"26px"}} />
               </button>
               {/* {navData.map(item =>{
                 return <NavLink key={item.id} className='navItem' to={item.link}>
