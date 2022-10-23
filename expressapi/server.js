@@ -5,6 +5,7 @@ const port = 3000
 var exec = require('child_process').exec;
 
 app.get('/getnearby/:pricelevel/:radius/:keyword', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   pricelevel = req.params.pricelevel;
   radius = req.params.radius;
   keyword = req.params.keyword;
