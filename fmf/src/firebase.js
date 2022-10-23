@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 dotenv.config()
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
