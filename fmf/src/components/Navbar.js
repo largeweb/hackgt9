@@ -23,7 +23,7 @@ const Navbar = () => {
       {open
         ? <div>
             <div className='navmenu'>
-              <button className='navmenu-icon' style={{background:"none"}} onClick={toggleOpen}>
+              <button className='' style={{background:"none"}} onClick={toggleOpen}>
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange", padding:"10px"}} /> */}
@@ -40,7 +40,7 @@ const Navbar = () => {
         : <div>
           <div>
             <div className='navmenuClosed'>
-              <button className='navmenu-icon' onClick={toggleOpen}>
+              <button className='' onClick={toggleOpen}>
                 {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
                 {/* <KeyboardDoubleArrowLeftIcon /> */}
                 {/* <hamburgerIcon style={{backgroundColor:"orange",padding:"10px"}} /> */}
